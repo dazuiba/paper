@@ -114,7 +114,7 @@ if(!aL){
     C[aJ]=null;
     U=aJ
     }
-    if(aJ.search(/flickr\.com\/nearby\/?$/)!==-1||aJ.search(/^\/nearby\/?$/)!==-1){
+    if(aJ.search(/handtu\.com\/nearby\/?$/)!==-1||aJ.search(/^\/nearby\/?$/)!==-1){
     if(navigator.geolocation&&typeof navigator.geolocation.getCurrentPosition==="function"){
         navigator.geolocation.getCurrentPosition(aI,aI);
         return
@@ -127,7 +127,7 @@ if(!aL){
         return
     }
 }
-if(aJ.search(/flickr\.com\/abuse\/?/)!==-1&&o&&!aO){
+if(aJ.search(/handtu\.com\/abuse\/?/)!==-1&&o&&!aO){
     if(o.search(/\/$/)!==-1){
         aJ+=(aJ.search(/\?/)===-1?"?":"&")+"goback="+F.iphone.urls.domain+"/"+o
         }else{
@@ -208,7 +208,7 @@ showSelectedPage:function(aH){
                 F.iphone.showPageById(aG)
             }else{
             if(aH){
-                var aK=(document.referrer.search(/m\..*?flickr\.com/)===-1)?document.referrer:null;
+                var aK=(document.referrer.search(/m\..*?handtu\.com/)===-1)?document.referrer:null;
                 var aI=(aK===null)
                 }else{
                 var aI=null,aK=null
@@ -237,7 +237,7 @@ addComment:function(aG,aL){
     if(aJ===0){
         aJ=1
         }
-        var aK=["method=flickr.photos.comments.addComment","photo_id="+aG,"comment_text="+encodeURIComponent(aO),"user_id="+F.iphone.globals.nsid];
+        var aK=["method=handtu.photos.comments.addComment","photo_id="+aG,"comment_text="+encodeURIComponent(aO),"user_id="+F.iphone.globals.nsid];
     function aI(aR){
         af();
         aL.removeAttribute("selected");
@@ -269,7 +269,7 @@ addGalleryComment:function(aK,aH){
     if(aI===""){
         return
     }
-    var aL=["method=flickr.galleries.comments.addComment","gallery_id="+F.iphone.globals.nsid+"-"+aK,"comment_text="+encodeURIComponent(aI)];
+    var aL=["method=handtu.galleries.comments.addComment","gallery_id="+F.iphone.globals.nsid+"-"+aK,"comment_text="+encodeURIComponent(aI)];
     function aG(aN){
         af();
         aH.removeAttribute("selected");
@@ -307,7 +307,7 @@ editPhotoLicense:function(aH,aN){
         d(F.iphone.format_strs.edit_photo_license_confirmation,"confirm")
         }
     }
-var aM=["method=flickr.photos.licenses.setLicense","photo_id="+aH,"license_id="+aJ];
+var aM=["method=handtu.photos.licenses.setLicense","photo_id="+aH,"license_id="+aJ];
 function aP(aQ){
     if(!aQ||aQ.responseText===""||aQ.status=="404"){
         aL(false);
@@ -335,7 +335,7 @@ editPhotoPrivacy:function(aH,aL){
             d(F.iphone.format_strs.edit_photo_privacy_confirmation,"confirm")
             }
         }
-    var aK=["method=flickr.photos.setPerms","photo_id="+aH,"is_public="+aM,"is_friend="+aO,"is_family="+aG];
+    var aK=["method=handtu.photos.setPerms","photo_id="+aH,"is_public="+aM,"is_friend="+aO,"is_family="+aG];
 function aN(aP){
     if(!aP||aP.responseText===""||aP.status=="404"){
         aJ(false);
@@ -363,7 +363,7 @@ editPhotoSafety:function(aG,aM){
         d(F.iphone.format_strs.edit_photo_safety_confirmation,"confirm")
         }
     }
-var aK=["method=flickr.photos.setSafetyLevel","photo_id="+aG,"safety_level="+aO];
+var aK=["method=handtu.photos.setSafetyLevel","photo_id="+aG,"safety_level="+aO];
 function aP(aQ){
     if(!aQ||aQ.responseText===""||aQ.status=="404"){
         aJ(false);
@@ -380,7 +380,7 @@ editPhoto:function(aG,aI){
     var aJ=p(aI,"form");
     var aM=aJ.title.value;
     var aL=aJ.description.value;
-    var aK=["method=flickr.photos.setMeta","photo_id="+aG,"title="+encodeURIComponent(aM),"description="+encodeURIComponent(aL)];
+    var aK=["method=handtu.photos.setMeta","photo_id="+aG,"title="+encodeURIComponent(aM),"description="+encodeURIComponent(aL)];
     function aH(aO){
         af();
         aI.removeAttribute("selected");
@@ -421,7 +421,7 @@ deletePhoto:function(aG,aI){
             d(F.iphone.format_strs.delete_photo_confirmation,"confirm")
             }
         }
-    var aJ=["method=flickr.photos.delete","photo_id="+aG];
+    var aJ=["method=handtu.photos.delete","photo_id="+aG];
 function aK(aL){
     if(!aL||aL.responseText===""||aL.status=="404"){
         aH(false);
@@ -440,7 +440,7 @@ editComment:function(aI,aH){
     if(aJ===""){
         return
     }
-    var aL=["method=flickr.photos.comments.editComment","comment_id="+aI,"comment_text="+encodeURIComponent(aJ),"user_id="+F.iphone.globals.nsid];
+    var aL=["method=handtu.photos.comments.editComment","comment_id="+aI,"comment_text="+encodeURIComponent(aJ),"user_id="+F.iphone.globals.nsid];
     function aG(aN){
         af();
         aH.removeAttribute("selected");
@@ -461,7 +461,7 @@ editComment:function(aI,aH){
 },
 deleteComment:function(aI,aH){
     aH.setAttribute("selected","progress");
-    var aJ=["method=flickr.photos.comments.deleteComment","comment_id="+aI,"user_id="+F.iphone.globals.nsid];
+    var aJ=["method=handtu.photos.comments.deleteComment","comment_id="+aI,"user_id="+F.iphone.globals.nsid];
     function aG(aL){
         af();
         aH.removeAttribute("selected");
@@ -487,7 +487,7 @@ editGalleryComment:function(aI,aH){
     if(aJ===""){
         return
     }
-    var aL=["method=flickr.galleries.comments.editComment","comment_id="+aI,"comment_text="+encodeURIComponent(aJ),"user_id="+F.iphone.globals.nsid];
+    var aL=["method=handtu.galleries.comments.editComment","comment_id="+aI,"comment_text="+encodeURIComponent(aJ),"user_id="+F.iphone.globals.nsid];
     function aG(aN){
         af();
         aH.removeAttribute("selected");
@@ -508,7 +508,7 @@ editGalleryComment:function(aI,aH){
 },
 deleteGalleryComment:function(aI,aH){
     aH.setAttribute("selected","progress");
-    var aJ=["method=flickr.galleries.comments.deleteComment","comment_id="+aI,"user_id="+F.iphone.globals.nsid];
+    var aJ=["method=handtu.galleries.comments.deleteComment","comment_id="+aI,"user_id="+F.iphone.globals.nsid];
     function aG(aL){
         af();
         aH.removeAttribute("selected");
@@ -531,13 +531,13 @@ changeRelationship:function(aK,aL,aO){
     var aG;
     switch(aO){
         case"add":
-            aG="flickr.contacts.add";
+            aG="handtu.contacts.add";
             break;
         case"edit":
-            aG="flickr.contacts.edit";
+            aG="handtu.contacts.edit";
             break;
         case"remove":
-            aG="flickr.contacts.remove"
+            aG="handtu.contacts.remove"
             }
             var aJ=["method="+aG,"user_id="+aK];
     if(aO==="add"||aO==="edit"){
@@ -604,7 +604,7 @@ if(!a3){
         aQ=aP(a2,n[aW]);
         if(aQ){
             aK=(n[aW].friend==="1"&&n[aW].family==="1")?F.iphone.format_strs.contact_list_friend_and_family:(n[aW].friend==="1"?F.iphone.format_strs.contact_list_friend:(n[aW].family==="1"?F.iphone.format_strs.contact_list_family:F.iphone.format_strs.contact_list_contact));
-            aL=(n[aW].iconfarm!=="0")?("http://farm"+n[aW].iconfarm+".static.flickr.com/"+n[aW].iconserver+"/buddyicons/"+n[aW].nsid+".jpg"):("http://www.flickr.com/images/buddyicon.jpg");
+            aL=(n[aW].iconfarm!=="0")?("http://farm"+n[aW].iconfarm+".static.handtu.com/"+n[aW].iconserver+"/buddyicons/"+n[aW].nsid+".jpg"):("http://www.handtu.com/images/buddyicon.jpg");
             aG++;
             aI=document.createElement("li");
             aI.className="contact";
@@ -663,7 +663,7 @@ function aP(a6,a5){
     }
 },
 toggleFavorite:function(aG,aH){
-    var aJ=(aF(aH,"favd"))?"flickr.favorites.remove":"flickr.favorites.add";
+    var aJ=(aF(aH,"favd"))?"handtu.favorites.remove":"handtu.favorites.add";
     (aF(aH,"favd"))?aD(aH,"favd"):aB(aH,"favd");
     var aI=["method="+aJ,"photo_id="+aG,"user_id="+F.iphone.globals.nsid];
     z(aI)
@@ -686,7 +686,7 @@ checkAbuseForm:function(){
         d(F.iphone.format_strs.report_abuse_magic_field_empty,"warn");
         return false
         }
-        if(aG!="flickr"){
+        if(aG!="handtu"){
         d(F.iphone.format_strs.report_abuse_magic_field_incorrect,"warn");
         return false
         }
@@ -800,8 +800,8 @@ togglePrivacyBoxes:function(aG){
 setRpCookie:function(){
     var aG=new Date();
     aG.setTime(aG.getTime()+(365*24*60*60*1000));
-    document.cookie="flrp=1; expires="+aG.toUTCString()+"; path=/; domain=.flickr.com";
-    document.cookie="flsp=0; expires=Monday, 19-Aug-1996 05:00:00 GMT; path=/; domain=.flickr.com";
+    document.cookie="flrp=1; expires="+aG.toUTCString()+"; path=/; domain=.handtu.com";
+    document.cookie="flsp=0; expires=Monday, 19-Aug-1996 05:00:00 GMT; path=/; domain=.handtu.com";
     window.location.reload();
     return false
     },
@@ -811,7 +811,7 @@ setAllowWWWCookie:function(){
         }
         var aI=new Date();
     aI.setTime(aI.getTime()+(365*24*60*60*1000));
-    document.cookie="mobile_allow_www=1; expires="+aI.toUTCString()+"; path=/; domain=.flickr.com";
+    document.cookie="mobile_allow_www=1; expires="+aI.toUTCString()+"; path=/; domain=.handtu.com";
     var aH=window.location.protocol+"//"+window.location.hostname.replace(/m\./,"")+"/";
     var aG=aj.id.replace(new RegExp(t,"g"),"?").replace(new RegExp(I,"g"),"=").replace(new RegExp(at,"g"),"&");
     if(aG.search("=")!==-1||aG.search("/")!==-1){
@@ -846,14 +846,14 @@ addEventListener("click",function(aJ){
                 if(aI.href.search(/^(\/|\#)/)===-1&&aI.href.search(/^https?:\/\//)===-1){
                 return
             }else{
-                if(aI.href&&(aI.href.search(/flickr\.com\/photos\/(.*?)\/\d+\/*/i)!==-1||aI.href.search(/flickr\.com\/photos\/(.*?)\/sets\/\d+\/*/i)!==-1||aI.href.search(/flickr\.com\/photos\/(.*?)\/collections\/\d+\/*/i)!==-1)&&aI.href.search(/m\..*?flickr\.com/i)===-1){
+                if(aI.href&&(aI.href.search(/handtu\.com\/photos\/(.*?)\/\d+\/*/i)!==-1||aI.href.search(/handtu\.com\/photos\/(.*?)\/sets\/\d+\/*/i)!==-1||aI.href.search(/handtu\.com\/photos\/(.*?)\/collections\/\d+\/*/i)!==-1)&&aI.href.search(/m\..*?handtu\.com/i)===-1){
                     aJ.preventDefault();
-                    F.iphone.showPageByHref(aI.href.replace(/http\:\/\//,"").replace(/^.*flickr\.com/i,"").replace(/\#.*$/,""),null,null,null,aG)
+                    F.iphone.showPageByHref(aI.href.replace(/http\:\/\//,"").replace(/^.*handtu\.com/i,"").replace(/\#.*$/,""),null,null,null,aG)
                     }else{
-                    if(aI.href&&aI.href.search(/flickr\.com/i)!==-1&&aI.href.search(/m\..*?flickr\.com/i)===-1){
+                    if(aI.href&&aI.href.search(/handtu\.com/i)!==-1&&aI.href.search(/m\..*?handtu\.com/i)===-1){
                         return
                     }else{
-                        if(aI.href&&(aI.href.match(/m\..*?flickr\.com\/places\//i)||aI.href.match(/m\..*?flickr\.com\/upgrade\//i)||aI.href.match(/m\..*?flickr\.com\/groups\//i)||aI.href.match(/m\..*?flickr\.com\/photos\/tags\//i)||aI.href.match(/m\..*?flickr\.com\/help\/contact\//i)||aI.getAttribute("type")=="external")){
+                        if(aI.href&&(aI.href.match(/m\..*?handtu\.com\/places\//i)||aI.href.match(/m\..*?handtu\.com\/upgrade\//i)||aI.href.match(/m\..*?handtu\.com\/groups\//i)||aI.href.match(/m\..*?handtu\.com\/photos\/tags\//i)||aI.href.match(/m\..*?handtu\.com\/help\/contact\//i)||aI.getAttribute("type")=="external")){
                             aJ.preventDefault();
                             document.location=aI.href.replace(/m\./i,"");
                             return
@@ -1093,15 +1093,15 @@ function f(aH,aG){
     function k(){
     var aG=3450,aI=1111,aH=ar("e_"+(aG+aI+4));
     if(aH&&!c){
-        var aJ=["method=flickr.people.getMagicEmail","user_id="+F.iphone.globals.nsid];
+        var aJ=["method=handtu.people.getMagicEmail","user_id="+F.iphone.globals.nsid];
         function aK(aM){
             if(!aM||!aM.responseXML||aM.status=="404"){
                 return
             }
             c=true;
             var aL=aM.responseXML.documentElement.getElementsByTagName("user")[0].getAttribute("magic_email");
-            aH.href="mailto:"+aL+"@photos.flickr.com";
-            aH.innerHTML=aL+"@photos.flickr.com"
+            aH.href="mailto:"+aL+"@photos.handtu.com";
+            aH.innerHTML=aL+"@photos.handtu.com"
             }
             z(aJ,aK)
         }
@@ -1145,7 +1145,7 @@ if(aJ){
     return aJ
 }
 function ak(){
-    var aG=["method=flickr.contacts.getList","page=1","per_page="+G];
+    var aG=["method=handtu.contacts.getList","page=1","per_page="+G];
     function aH(aJ){
         if(!aJ||!aJ.responseXML||aJ.status=="404"){
             return
@@ -1230,7 +1230,7 @@ function ah(aK,aL){
     }
 function Q(aG){
     if(!aG.id){
-        id=U.replace(/^http\:\/\/.*?flickr\.com/,"").replace(/^\//,"").replace(/\?/,t).replace(/\&/g,at).replace(/\=/g,I).replace(/\%20|\s/g,ae);
+        id=U.replace(/^http\:\/\/.*?handtu\.com/,"").replace(/^\//,"").replace(/\?/,t).replace(/\&/g,at).replace(/\=/g,I).replace(/\%20|\s/g,ae);
         aG.id=id
         }
     }

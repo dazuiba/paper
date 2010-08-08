@@ -4,6 +4,9 @@
 <head>
 	<title>Iphone 墙纸</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="googlebot" content="noimageindex">
 	<link href="http://www.flickr.com/favicon.ico" rel="shortcut icon"> 
 	<link href="/apple-touch-icon.png" rel="apple-touch-icon">
 	<%= stylesheet_link_tag "/iphone/iphone", :cache => true %>
@@ -80,7 +83,7 @@
 		<div id="header-top">
 			<div id="logo">
 				<h1><a href="#home" id="logo-link" title="首頁"><img src="http://l.yimg.com/g/images/iphone/flickr_logo.png" alt="Flickr" width="50" height="15"></a></h1>
-				<span id="global-loading"><img src="http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif" width="20" height="10" alt="載入中..."></span>
+				<span id="global-loading"><img src="http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif" width="20" height="10" alt="正在加载..."></span>
 			</div>
 
 			<div id="signedin"><a href="/signin/" type="signin">登入</a></div>
@@ -105,96 +108,10 @@
 			<span></span>
 			<a href="#" class="close" type="hide_message"><span></span></a>
 		</div>
-	</div>
-
- 	
-	
-	<div id="home" tab="welcome" class="hide-sub-nav" spaceid="792600356">
-		<div>
-			<div id="home-top">
-				<div id="featured-photo">
-					<h2>分享你的相片；靜觀世界變化。</h2>
-					<a href="/photos/pmorgan/32606683/" class="image_link main-image">
-						<img src="http://l.yimg.com/g/images/home_photo_pmorgan.jpg" alt="">
-					</a>
-
-					<cite>
-						<a href="http://www.flickr.com/creativecommons/" class="image_link">
-							<img src="http://l.yimg.com/g/images/home_cc.png" width="16" height="16" alt="Creative Commons 授權" class="trans_png">
-						</a> 
-						<a href="/photos/pmorgan/">pmorgan</a> 上載
-					</cite>
-				</div>
-			
-				<div id="stats-strip">
-					<form action="/search/advanced" method="GET">
-
-						<input type="text" name="q" id="search-field-welcome" class="form-field" onfocus="F.iphone.setSearchFields(this);" onkeyup="F.iphone.setSearchFields(this);" onchange="F.iphone.setSearchFields(this);"> <a class="Butt form-submit" type="submit" href="#">搜尋</a>
-					</form>
-			                <ul>
-							<li class="first"><a href="/explore/interesting/">過去一分鐘</a> <strong>4,390</strong> 個上載 <b>&#183;</b></li>
-								<li class="tour"><a href="http://www.flickr.com/tour/">參與導覽</a></li>
-
-				                </ul>
-			        </div>
-			</div>
-				<ul class="button-nav">
-				<li class="first"><a class="Butt" href="/signin/" type="signin">登入</a></li>
-									<li class="last"><a class="Butt" href="/signup/yahoo/">建立帳號</a></li>
-							</ul>
-			</div>
-
-	</div>
+	</div> 
 	
 	
-
-	
-	<div id="search" tab="search" class="hide-sub-nav" spaceid="">
-		<form id="main-search-form" action="/search/advanced" method="GET">
-
-			<h2>搜尋 Flickr</h2>
-
-			<input type="text" value="" id="search-field" class="search-field" name="q" autocorrect="off" autocapitalize="off" onfocus="F.iphone.setSearchFields(this);" onkeyup="F.iphone.setSearchFields(this);" onchange="F.iphone.setSearchFields(this);">
-
-			<select name="w" class="who" onchange="F.iphone.setSearchUI(this);">
-				<option value="all">所有人的上載</option>
-
-				<option value="people">Flickr 全人類</option>
-			</select>
-			
-			<a href="#" type="js" onclick="F.iphone.showAdvSearch(); return false;" id="adv-search-toggle">更多選項…</a>
-			
-			<div id="adv-search-options">
-		  	        <h4>安全搜尋</h4>
-
-		    		<input type="radio" name="ss" id="safe_search_0" value="0" checked> <label for="safe_search_0">開啟安全搜尋</label><br>
-
-				<input type="radio" name="ss" id="safe_search_1" value="1"> <label for="safe_search_1">將安全搜尋設定為中等</label><br>
-				<input type="radio" name="ss" id="safe_search_2" value="2"> <label for="safe_search_2">關閉安全搜尋</label>
-	
-				<h4>按內容類型搜尋</h4>
-
-				<input type="checkbox" name="prefs_photos" id="prefs_photos" value="1"> <label for="prefs_photos">相片 / 視訊</label><br>
-				<input type="checkbox" name="prefs_screenshots" id="prefs_screenshots" value="1"> <label for="prefs_screenshots">螢幕截圖 / 螢幕場景</label><br>
-
-				<input type="checkbox" name="prefs_other" id="prefs_other" value="1"> <label for="prefs_other">圖解/插圖 / 動畫/CGI</label><br>
-		
-				<h4>按媒體類型搜尋</h4>
-
-				<input type="radio" name="mt" id="media_all" value="all" checked> <label for="media_all">相片和視訊</label><br>
-				<input type="radio" name="mt" id="media_photos" value="photos"> <label for="media_photos">僅相片</label><br>
-				<input type="radio" name="mt" id="media_videos" value="videos"> <label for="media_videos">僅視訊</label>		
-			</div>
-
-			<input class="Butt form-submit" id="search-submit" type="submit" value="搜尋">
-		</form>
-	</div>
-	
-	<div id="404" class="content hide-sub-nav page-not-found" spaceid="">
-		<p class="first">
-			<span class="warning-icon"></span>找不到頁面。對不起 :(
-		</p>
-	</div>
+	<%= yield %>
 
 	<div id="footer">
 		<p>Copyright © 2010 Yahoo! Inc. 版權所有 不得轉載</p>

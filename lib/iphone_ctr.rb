@@ -2,7 +2,13 @@ module IphoneCtr
   def self.included(base)
     base.send :before_filter, :adjust_format_for_iphone
     #base.send :before_filter, :iphone_login_required
-    #base.send :layout, proc{ |controller| controller.iphone_request? ? "iphone" : "application" }
+    base.send :layout, proc{ |controller| 
+      if controller.request.xhr? && controller.send(:iphone_request?)
+          nil
+      else
+        "application" 
+      end
+    }
   end
   protected
     # Set iPhone format if request to iphone.trawlr.com

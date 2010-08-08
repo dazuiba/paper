@@ -6,17 +6,18 @@ class TagsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
+      format.iphone
       format.xml  { render :xml => @tags }
     end
   end
-
+  
   # GET /tags/1
   # GET /tags/1.xml
   def show
-    @tag = Tag.find_by_name(params[:id])
-    @taggables = Paper.tagged_with(params[:id])
+    @taggables = Paper.tagged_with(params[:id])#.paginate(:page => params[:page], :limit=>15)
     respond_to do |format|
       format.html # show.html.erb
+      format.iphone
       format.xml  { render :xml => @tag }
     end
   end
@@ -28,6 +29,8 @@ class TagsController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
+      format.iphone
+      
       format.xml  { render :xml => @tag }
     end
   end

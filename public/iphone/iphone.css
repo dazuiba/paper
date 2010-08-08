@@ -68,6 +68,17 @@ color:#999999;
 .plain {
 text-decoration:none;
 }
+
+#tagcloud{
+	padding: 14px;
+}
+
+.cloud1 a{ font: 12px Arial, Helvetica, sans-serif;  line-height:24px; }
+.cloud2 a{ font: 14px bold Arial, Helvetica, sans-serif;  line-height:24px; }
+.cloud3 a{ font: 18px Arial, Helvetica, sans-serif;  line-height:24px; }
+.cloud4 a{ font: 21px bold Arial, Helvetica, sans-serif;  line-height:24px; }
+
+
 .Butt {
 -moz-border-radius:4px 4px 4px 4px;
 background:none repeat scroll 0 0 #0063DC;
@@ -231,7 +242,7 @@ text-indent:-9999em;
 input {
 font-size:16px;
 margin:8px 0 0;
-padding:6px 6px 6px 44px;
+padding:6px 6px 6px 14px;
 width:100%;
 }
 input[type*="radio"], input[type*="checkbox"] {
@@ -2086,10 +2097,9 @@ font-weight:bold;
 margin:16px 0 3px;
 }
 #search .search-field {
-font-size:18px;
+font-size:14 px;
 margin:4px 0;
-padding:2px;
-width:100%;
+width:60%;
 }
 #search .who {
 font-size:15px;
@@ -2098,8 +2108,6 @@ width:100%;
 }
 #search #search-submit {
 background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll -100px -100px #0063DC;
-float:right;
-margin-top:-35px;
 min-width:80px;
 text-align:center;
 }

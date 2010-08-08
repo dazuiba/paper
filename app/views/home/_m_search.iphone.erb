@@ -1,0 +1,21 @@
+	
+	<div id="search" tab="search" class="hide-sub-nav" spaceid="">
+		<form id="main-search-form" action="/tags/show" method="GET">
+			<h2>搜索 Flickr</h2>
+
+			<input type="text" value="" id="search-field" class="search-field" name="id" autocorrect="off" autocapitalize="off" onfocus="F.iphone.setSearchFields(this);" onkeyup="F.iphone.setSearchFields(this);" onchange="F.iphone.setSearchFields(this);">
+			<input class="Butt form-submit" id="search-submit" type="submit" value="搜索">
+		</form> 
+
+		<div id="tagcloud">
+		<% @tags.each_with_index do|tag,index| 
+			last = ((index+1)%4==0 )
+			%>
+			<span class="cloud cloud3">
+				<%= safe_link_to_tag(tag) %>
+		  </span>	&nbsp; &nbsp;
+			
+		<% end %>
+		</div>
+	</div>
+	

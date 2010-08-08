@@ -29,6 +29,7 @@ class PapersController < ApplicationController
     
     respond_to do |format|
       format.html # show.html.erb
+      format.iphone{render :layout => !request.xhr?}
       format.xml  { render :xml => @paper }
     end
   end

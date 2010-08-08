@@ -1,0 +1,58 @@
+<div class="opt-bar-line clearfix">
+    <div class="fleft"> 
+按推荐排序&nbsp;·&nbsp;<a href="./photos?type=S&amp;start=0&amp;sortby=comment&amp;size=a&amp;subtype=a">按回复排序</a>&nbsp;·&nbsp;<a href="./photos?type=S&amp;start=0&amp;sortby=time&amp;size=a&amp;subtype=a">按时间排序</a>
+    </div>
+    <div class="fright">
+            &gt;&nbsp;<a href="./mupload" class="j a_show_login">添加剧照、壁纸或海报</a>
+    </div>
+</div>
+
+<ul class="poster-col4 clearfix">
+<% @taggables.each_with_index do|paper,index| 
+	last = ((index+1)%4==0 )
+	%>
+	
+	<li <%= last ? "class='last'" : ""%>>
+	 		<%= link_to_paper paper, :s %>
+      <div class="prop"> 
+      </div>
+       <div class="name">
+           <%= paper.title %>
+       </div>
+  </li>
+	<% if last %>
+	<li class="sep"></li>
+	<% end %>
+<% end %>
+</ul>
+
+
+
+
+
+
+
+	<ul class="photo-list hide-sub-nav thumb-view" tab="explore" spaceid="792600363">
+		<li class="title">
+				發掘 / 有趣的
+				<br><span class="subtitle">2010年8月7日</span>
+		</li>
+		
+		<% @taggables.each do |paper| %>
+			<li>
+				<a href="<%= paper_path(paper) %>">
+					<span class="img_block photo_container pc_iphone_list">
+						<span class="loading-overlay"></span>	
+						<img src="<%= paper_image_url(paper, :s) %>" width="75" height="75" alt="" class="pc_img">
+					</span>
+				</a>
+			</li> 
+		<% end %>
+			<li class="pagination">
+					<span class="pagination-info">
+				第 1 頁（共 21 頁）
+			</span>
+				<a class="Butt pagination-next" href="/explore/interesting/page2">下一張</a>
+				</li>
+
+	</ul>
