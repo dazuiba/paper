@@ -1,4 +1,3 @@
-require 'Hpricot'
 module Crawler
   
   def self.empty_table
@@ -51,6 +50,7 @@ module Crawler
      
     
     def doc
+      require 'Hpricot'
        @doc ||= Hpricot curl(@url)
     end
 
