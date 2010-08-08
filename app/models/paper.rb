@@ -1,4 +1,3 @@
-require 'image_science'
 class Paper < ActiveRecord::Base 
     REAL_FOLDER = "#{RAILS_ROOT}/public/papers"
     include Crawler::Utils
@@ -52,6 +51,7 @@ class Paper < ActiveRecord::Base
     private
     
     def create_thumb_file(size, root)
+      require 'image_science'
       file = "#{root}/#{image_path}"
       FileUtils.mkdir_p  File.dirname(file)
       ImageScience.with_image(real_file){|img|img.thumbnail(size){|t|t.save file}}
