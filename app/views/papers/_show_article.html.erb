@@ -3,7 +3,8 @@
 		        第135张/共141张
 		    </span>
 		    <span class="opt-mid">
-		        <a href="http://movie.douban.com/photos/photo/508240758/#next_photo" title="用方向键←可以向前翻页" id="pre_photo">上一张</a>&nbsp;/&nbsp;<a href="http://movie.douban.com/photos/photo/479124214/#next_photo" name="next_photo" title="用方向键→可以向后翻页" id="next_photo">下一张</a>
+		        <a href="<%= paper_path(@paper,:go=>'pre') %>" title="用方向键←可以向前翻页" id="pre_photo">上一张</a>&nbsp;/&nbsp;
+						<a href="<%= paper_path(@paper,:go=>'next') %>" name="next_photo" title="用方向键→可以向后翻页" id="next_photo">下一张</a>
 		    </span>
 		    <span class="fright">
 		        &gt;&nbsp;
@@ -12,8 +13,8 @@
 		</div>
 
 		<div class="photo-show">
-		    <a class="mainphoto" href="http://movie.douban.com/photos/photo/479124214/#next_photo" title="点击查看下一张">
-		        <img src="http://t.douban.com/view/photo/photo/public/p479156460.jpg">
+		    <a class="mainphoto" href="<%= paper_path(@paper,:go=>'next') %>" title="点击查看下一张">
+		        <img src="<%= paper_image_url(@paper)%>">
 		    </a>
 		</div>
 
@@ -23,7 +24,10 @@
 
 		<div class="opt-bar clearfix">
 		    <span class="update magnifier">
-		        <a class="j a_show_login" target="_blank" onclick="moreurl(this, {raw: '479156460'})" href="http://t.douban.com/view/photo/raw/public/p479156460.jpg">查看原图</a>
+		        <a class="j a_show_login" 
+							 target="_blank" 
+							 onclick="moreurl(this, {raw: '479156460'})" 
+							 href="http://t.douban.com/view/photo/raw/public/p479156460.jpg">查看原图</a>
 		    </span>
     
     

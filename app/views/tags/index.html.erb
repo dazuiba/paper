@@ -1,0 +1,38 @@
+<style>
+.tagCol{width:100%}
+.tagCol td{width:20%;font-size:14px}
+    .tagCol td b{
+        font-weight:normal;
+        color:#aaa;
+
+    }
+
+</style>
+
+<h1>分类浏览</h1>
+<div class="grid-16-8 clearfix">
+		<div class="article">  
+			<div class="clearfix" style="border-bottom: 1px solid rgb(204, 204, 204); padding-bottom: 5px; margin-bottom: 10px;">
+
+			    <span class="rr greyinput">
+			        分类浏览 /
+			        <a href="http://movie.douban.com/tag/?view=cloud">所有热门标签</a>
+			    </span>
+			</div>
+			
+			<table class="tagCol">
+           <tbody>
+						<% @tags.each_slice(4).each do |a,b,c,d| %>
+             <tr>
+              <td><%= safe_link_to_tag(a) %></td>
+              <td><%= safe_link_to_tag(b) %></td>
+              <td><%= safe_link_to_tag(c) %></td>
+              <td><%= safe_link_to_tag(d) %></td>
+             </tr>
+						<% end %>
+           </tbody>
+       </table>
+		</div>
+    <div class="aside">
+    </div> 
+</div>

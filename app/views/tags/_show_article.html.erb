@@ -7,18 +7,21 @@
     </div>
 </div>
 
-<ul class="opt-bar-line clearfix">
-	<li>
-	   <div class="cover">
-				<a href="http://movie.douban.com/photos/photo/542701517/">
-					<img src="http://img2.douban.com/view/photo/thumb/public/p542701517.jpg"></a>
-		 </div>
-      <div class="prop">
-          1279x845
+<ul class="poster-col4 clearfix">
+<% @taggables.each_with_index do|paper,index| 
+	last = ((index+1)%4==0 )
+	%>
+	
+	<li <%= last ? "class='last'" : ""%>>
+	 		<%= link_to_paper paper, :s %>
+      <div class="prop"> 
       </div>
        <div class="name">
-           介个动作很冒险的说
-               <a href="http://movie.douban.com/photos/photo/542701517/#comments">83回应</a>
+           <%= paper.title %>
        </div>
   </li>
+	<% if last %>
+	<li class="sep"></li>
+	<% end %>
+<% end %>
 </ul>

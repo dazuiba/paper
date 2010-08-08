@@ -4,7 +4,6 @@ class CreatePapers < ActiveRecord::Migration
       t.string :uid
       t.string :image_path
       t.string :title
-      t.string :title
       t.integer :total_views
       t.integer :today_views
       t.integer :created_by_user_id
@@ -12,6 +11,9 @@ class CreatePapers < ActiveRecord::Migration
       t.string :from_url
       t.timestamps
     end
+    
+    add_index :papers, :uid
+    add_index :papers, :from_url
   end
 
   def self.down

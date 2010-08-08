@@ -1,5 +1,11 @@
 require 'Hpricot'
 module Crawler
+  
+  def self.empty_table
+    Paper.destroy_all
+    Tag.destroy_all
+  end
+  
   module Utils
     def curl(cmd, cmd2=nil)
      cmd = "curl -L #{cmd} 2>/dev/null #{cmd2}"
@@ -42,56 +48,49 @@ module Crawler
     def initialize(url)
       @url = url
     end
+     
     
-    def execute
-     @doc = Hpricot curl(@url)
-     parse(@doc)
+    def doc
+       @doc ||= Hpricot curl(@url)
     end
-    
 
   end
-  
-  
-  class ImageFile < ActiveRecord::Base
-    set_table_name "papers"
-    include Utils
-    #title, image, tag, total_views, today_views
-    validates_presence_of :title 
-    
-    acts_as_taggable
-    
-    def image=(url)
-      last_one = self.class.first(:order=>"id desc")
-      current_id = last_one ? last_one.id+1 : 1
-      path = "#{(current_id/50)%10}"
-      self.image_path = "#{path}/#{current_id}.jpg"
-      dir = "#{RAILS_ROOT}/public/papers/#{path}"
-      FileUtils.mkdir_p(dir)
-      
-      curl "#{url} -o #{dir}/#{self.image_path}"
-    end 
-  end
+   
   
   #alliphonewallpapers
   class AllIP < SiteBase
-    REG_VIEW_POINTS = /Total views: (\d+) \/ Today views: (\d+).+Category: (.+)/i
-    
-     def parse(doc)
+    REG_VIEW_POINTS = /Total views: ([\d,\,]+) \/ Today views: ([\d,\,]+).+Category: (.+)/i
+      
+    def parse
       image = doc.at("#wallpaper_holder2 img")
       title = doc.at("#content_height h1")
       total_views = doc.at("#description ul")
-      total_views.innerText =~ REG_VIEW_POINTS
-      paper = ImageFile.new(:image => image[:src], 
+      return false unless image&&title&&total_views
+      total_views = total_views.innerText.gsub("\n","")
+      if (total_views=~ REG_VIEW_POINTS) && (total_points = $1) && (today_points = $2)
+        tag = $3
+        total_points = Integer(total_points.gsub(",",""))
+        today_points = Integer(today_points.gsub(",",""))
+
+        paper = Paper.find_or_initialize_by_from_url(url)
+        paper.attributes = {:image => image[:src], 
                              :title => title.innerText,
-                             :from_url => url, 
-                             :total_views => $1,
-                             :today_views => $2) 
-                             
-      if tag = $3
-        paper.tag_list tag
+                             :total_views => total_points,
+                             :today_views => today_points}
+
+        if tag
+          paper.tag_list = [tag]
+        end
+        paper
+      else
+        raise "REG_VIEW_POINTS cannot appy for #{total_views}" 
       end
-      paper.save!
-     end
+    end
+      
+    def parse_and_save
+     paper = parse
+     paper&&paper.save!      
+    end
      
      def content_valid?(content)
       content.at("#{content_height}").html=~/iphone wallpaper/i

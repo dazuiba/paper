@@ -1,0 +1,2531 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+margin:0;
+padding:0;
+}
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+fieldset, img {
+border:0 none;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+font-style:normal;
+font-weight:normal;
+}
+ol, ul {
+list-style:none outside none;
+}
+caption, th {
+text-align:left;
+}
+h1, h2, h3, h4, h5, h6 {
+font-size:100%;
+font-weight:normal;
+}
+q:before, q:after {
+content:"";
+}
+abbr, acronym {
+border:0 none;
+}
+a {
+color:#0063DC;
+text-decoration:none;
+}
+a:active {
+background-color:inherit;
+}
+h2 {
+color:#000000;
+font-size:14px;
+font-weight:bold;
+}
+h3 {
+color:#000000;
+font-size:12px;
+font-weight:bold;
+}
+strong {
+font-weight:bold;
+}
+em {
+font-style:italic;
+}
+.grey {
+color:#999999;
+font-style:italic;
+}
+.HighlightNew {
+background-color:#000000;
+color:#FFFFFF;
+font-weight:bold;
+padding:1px 4px;
+}
+.disabled {
+color:#999999;
+}
+.plain {
+text-decoration:none;
+}
+.Butt {
+-moz-border-radius:4px 4px 4px 4px;
+background:none repeat scroll 0 0 #0063DC;
+border:medium none;
+color:#FFFFFF;
+font-family:inherit;
+font-size:12px;
+font-weight:bold;
+padding:10px;
+text-decoration:none;
+text-shadow:0 -1px 0 transparent;
+white-space:nowrap;
+width:auto;
+}
+.DeleteButt {
+background:none repeat scroll 0 0 #E40600;
+}
+.DisabledButt {
+background:none repeat scroll 0 0 #DDDDDD;
+}
+.CancelButt {
+background:none repeat scroll 0 0 #6E6E6E;
+}
+.delete {
+color:red;
+}
+.hidden {
+color:#000000;
+}
+.breaking-non-space {
+font-size:0;
+}
+body {
+background:none repeat scroll 0 0 #FFFFFF;
+color:#000000;
+font-family:Arial,Helvetica,sans-serif;
+font-size:14px;
+min-width:320px;
+overflow-x:hidden;
+}
+body > :not(.toolbar) {
+background:none repeat scroll 0 0 #FFFFFF;
+display:none;
+left:0;
+margin:0;
+min-height:336px;
+min-width:320px;
+padding:0;
+position:absolute;
+top:81px;
+width:100%;
+}
+body[orient="landscape"] > :not(.toolbar) {
+min-height:232px;
+}
+body > .hide-sub-nav {
+background:none repeat scroll 0 0 #FFFFFF;
+margin-top:-25px;
+min-height:361px;
+}
+body[orient="landscape"] > .hide-sub-nav {
+min-height:257px;
+}
+body > .hide-main-nav {
+background:none repeat scroll 0 0 #FFFFFF;
+margin-top:-54px;
+min-height:390px;
+}
+body[orient="landscape"] > .hide-main-nav {
+min-height:286px;
+}
+body > [selected="true"] {
+display:block;
+}
+body > .toolbar {
+-moz-box-sizing:border-box;
+height:81px;
+}
+body > ul > li {
+border-bottom:1px solid #E0E0E0;
+font-size:20px;
+font-weight:bold;
+list-style:none outside none;
+margin:0;
+padding:8px 0 8px 10px;
+position:relative;
+}
+body > ul > li.group {
+background:none repeat scroll 0 0 #F3F3F3;
+border-top:1px solid #E0E0E0;
+color:#000000;
+font-size:15px;
+font-weight:bold;
+margin-bottom:-2px;
+position:relative;
+top:-1px;
+}
+body > ul > li.group:first-child {
+border-top:medium none;
+top:0;
+}
+body > ul > li.group span {
+color:#888888;
+font-weight:normal;
+}
+body > ul > li.title, body > ul > li.attribution, body > ul > li.description {
+background:none repeat scroll 0 0 #FFFFFF;
+color:#000000;
+font-weight:bold;
+margin-bottom:-1px;
+padding:10px 5px;
+position:relative;
+top:-1px;
+}
+body > ul > li > a {
+background:url("http://l.yimg.com/g/images/iphone/list_arrow.png") no-repeat scroll right center transparent;
+color:inherit;
+display:block;
+margin:-8px 0 -8px -10px;
+padding:8px 32px 8px 10px;
+text-decoration:none;
+}
+body > ul > li > a[selected="progress"] {
+background-image:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") !important;
+margin-right:6px;
+}
+body > ul > li.pagination {
+border-bottom:medium none;
+overflow:hidden;
+padding:5px;
+}
+body > ul > li.pagination a.pagination-next {
+float:right;
+min-height:0;
+min-width:55px;
+padding:10px 15px;
+text-align:center;
+}
+body > ul > li.pagination a.pagination-prev {
+float:left;
+min-height:0;
+min-width:55px;
+padding:10px 15px;
+text-align:center;
+}
+body > ul > li.pagination .pagination-info {
+color:#999999;
+display:block;
+font-size:11px;
+left:50%;
+margin-left:-75px;
+position:absolute;
+text-align:center;
+top:16px;
+width:150px;
+}
+body > ul > li.pagination a.Butt[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+text-indent:-9999em;
+}
+input {
+font-size:16px;
+margin:8px 0 0;
+padding:6px 6px 6px 44px;
+width:100%;
+}
+input[type*="radio"], input[type*="checkbox"] {
+font-size:16px;
+height:16px;
+margin:0;
+padding:0;
+width:16px;
+}
+#preloader {
+background-image:url("http://l.yimg.com/g/images/iphone/list_arrow.png"), url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif"), url("http://l.yimg.com/g/images/iphone/sprite_activity_icons.png.v1"), url("http://l.yimg.com/g/images/iphone/sprite_photo_toolbar_v3.png.v1"), url("http://l.yimg.com/g/images/iphone/set_case.gif"), url("http://l.yimg.com/g/images/iphone/sprite_confirmation_icons.png");
+display:none;
+}
+#header.show-sub-nav {
+border-bottom:1px solid #E0E0E0;
+}
+#header-top {
+margin-bottom:4px;
+overflow:hidden;
+}
+#logo {
+float:left;
+height:16px;
+overflow:hidden;
+padding:5px 0 0 5px;
+}
+#global-loading {
+display:none;
+margin:-12px 0 0 56px;
+}
+#large-loader {
+-moz-border-radius:10px 10px 10px 10px;
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll 5px 6px #EEEEEE;
+color:#666666;
+height:19px;
+left:50%;
+margin:-12px 0 0 -64px;
+padding:4px 3px 2px 35px;
+position:absolute;
+top:50%;
+width:90px;
+}
+#signedin {
+color:#999999;
+float:right;
+font-size:11px;
+padding:8px 5px 0;
+}
+#signedin .signin-warning {
+background:none repeat scroll 0 0 #FFFDD3;
+color:#000000;
+margin:-7px 0 0;
+padding:4px 4px 4px 23px;
+position:relative;
+}
+#signedin .signin-warning span.icon {
+background:url("http://l.yimg.com/g/images/iphone/sprite_confirmation_icons.png") no-repeat scroll -20px 0 transparent;
+display:block;
+height:14px;
+left:5px;
+position:absolute;
+top:3px;
+width:14px;
+}
+.msg {
+background:url("http://l.yimg.com/g/images/iphone/sprite_confirmation_icons.png") repeat-x scroll 0 -35px transparent;
+display:none;
+height:25px;
+left:0;
+padding-bottom:2px;
+position:fixed;
+top:-30px;
+width:100%;
+z-index:10;
+}
+.msg span {
+background:url("http://l.yimg.com/g/images/iphone/sprite_confirmation_icons.png") no-repeat scroll 0 0 transparent;
+display:block;
+height:14px;
+left:7px;
+position:absolute;
+top:6px;
+width:14px;
+}
+.msg.confirm span {
+background-position:0 0;
+}
+.msg.warn span {
+background-position:-20px 0;
+}
+.msg.info span {
+background-position:-40px 0;
+}
+.msg a.close {
+display:block;
+height:100%;
+position:absolute;
+right:0;
+top:0;
+width:100%;
+}
+.msg a.close span {
+background:url("http://l.yimg.com/g/images/iphone/sprite_confirmation_icons.png") no-repeat scroll -79px 0 transparent;
+display:block;
+height:7px;
+left:100%;
+margin-left:-15px;
+position:absolute;
+top:10px;
+width:7px;
+}
+.msg p {
+background:none repeat scroll 0 0 #EEEEEE;
+color:#000000;
+font-size:11px;
+height:13px;
+padding:7px 40px 5px 26px;
+}
+.msg.info p {
+background-color:#DCE8F6;
+}
+.msg.warn p {
+background-color:#FFFDD3;
+}
+.msg.confirm p {
+background-color:#EFFAD7;
+}
+#nav {
+line-height:14px;
+position:relative;
+}
+#nav_main {
+color:#111111;
+height:30px;
+}
+#nav_main li {
+background:none repeat scroll 0 0 #F3F3F3;
+border-color:#E3E3E3;
+border-style:solid;
+border-width:0 0 1px 1px;
+float:left;
+margin:2px 0 0 -1px;
+text-align:center;
+width:25%;
+}
+#nav_main li.first {
+border-left:medium none;
+}
+#nav_main li.selected {
+background:none repeat scroll 0 0 #FFFFFF;
+border-bottom:1px solid #FFFFFF;
+border-width:1px;
+font-weight:bold;
+margin-left:-2px;
+margin-top:0;
+z-index:10;
+}
+#nav_main li.last.selected {
+border-right:medium none;
+}
+#nav_main li a {
+display:block;
+padding:6px 0 7px;
+}
+#nav_main li.selected a {
+color:#000000;
+padding-top:7px;
+}
+#nav_sub li {
+float:left;
+font-weight:normal;
+text-align:center;
+width:50%;
+}
+#nav_sub li a {
+display:block;
+padding:6px 0 5px;
+}
+#nav_sub li.selected a {
+color:#000000;
+font-weight:bold;
+}
+#nav_sub li.first {
+left:0;
+}
+#nav_sub li.last {
+left:50%;
+}
+#nav_sub li.full {
+left:0;
+width:100%;
+}
+#nav_main li a[selected="progress"], #nav_sub li a[selected="progress"] {
+background:none repeat scroll 0 0 transparent !important;
+}
+.iphone-layout-dissabled .hide-sub-nav {
+margin-top:-25px;
+}
+.footer {
+color:#999999;
+font-size:10px !important;
+padding:30px 0 10px;
+text-align:center;
+}
+.iphone-layout-dissabled .footer {
+padding-top:0;
+}
+.footer p {
+margin-bottom:4px;
+}
+.footer p.plain a {
+color:inherit;
+}
+.footer a.sign-out, .footer a.report-abuse {
+text-transform:lowercase;
+}
+.contact-title {
+color:#000000;
+font-size:14px;
+font-weight:bold;
+min-height:20px;
+overflow:hidden;
+padding:9px 34px 5px 5px;
+position:relative;
+}
+.contact-title img {
+float:left;
+margin-right:5px;
+margin-top:-4px;
+}
+.contact-title a {
+background:none repeat scroll 0 0 transparent;
+color:#0063DC;
+display:inline;
+margin:0;
+padding:0;
+}
+.contact-title a.contact-more {
+background:url("http://l.yimg.com/g/images/iphone/sprite_photo_toolbar_v3.png.v1") no-repeat scroll center -188px #F3F3F3;
+display:block;
+height:24px;
+margin:0;
+min-height:0;
+padding:0;
+position:absolute;
+right:5px;
+top:5px;
+width:24px;
+}
+.contact-title a.contact-more-selected {
+background-position:center -213px;
+}
+.contact-title a.contact-more span {
+display:block;
+left:-999em;
+position:absolute;
+}
+.contact-title a[selected="progress"] {
+background:none repeat scroll 0 0 transparent !important;
+}
+.contact-title a.contact-more[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #F3F3F3 !important;
+padding:0 4px;
+}
+#home > div:not(.footer) {
+padding:12px;
+}
+#home #launchHead {
+margin-bottom:16px;
+}
+#home #greeting h2 {
+font-size:20px;
+line-height:20px;
+margin:0 0 3px 5px;
+}
+#home #greeting small {
+color:#999999;
+display:block;
+font-size:11px;
+font-weight:normal;
+margin-left:6px;
+}
+#home p {
+margin-bottom:12px;
+}
+#home .loggedout p {
+background:none repeat scroll 0 0 #EAF2FA;
+font-size:12px;
+padding:8px;
+}
+#home .launch-warning p {
+background:none repeat scroll 0 0 #FFFDD3;
+font-size:12px;
+padding:8px 8px 8px 32px;
+position:relative;
+}
+#home .launch-warning p span.icon {
+background:url("http://l.yimg.com/g/images/iphone/sprite_confirmation_icons.png") no-repeat scroll -20px 0 transparent;
+display:block;
+height:14px;
+left:10px;
+position:absolute;
+top:10px;
+width:14px;
+}
+#home .footer p {
+margin-bottom:4px;
+}
+#home .last-login-date {
+color:#999999;
+font-size:10px;
+}
+#home-nav {
+margin-bottom:6px;
+}
+#home-nav li {
+background:none repeat scroll 0 0 #EAF2FA;
+margin-bottom:2px;
+overflow:hidden;
+}
+#home-nav li.suggestion {
+background:none repeat scroll 0 0 #E0FDD1;
+}
+#home-nav li span {
+display:block;
+float:left;
+}
+#home-nav li span.New {
+background:none repeat scroll 0 0 #FFE28A;
+color:#333333;
+font:8px Verdana,Arial,Helvetica,sans-serif;
+margin:3px 0 0 4px;
+padding:0 3px 1px;
+}
+#home-nav li a {
+background:url("http://l.yimg.com/g/images/iphone/list_arrow.png") no-repeat scroll right center transparent;
+color:#444444;
+display:block;
+font-size:14px;
+overflow:hidden;
+padding:12px 36px 12px 12px;
+}
+#home-nav li a[selected="progress"] {
+background-image:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") !important;
+margin-right:7px;
+padding-right:30px;
+}
+#home p.note {
+color:#999999;
+font-size:11px;
+line-height:11px;
+}
+#home-color-legend {
+background-color:#EAF2FA;
+float:left;
+height:12px;
+margin-right:4px;
+width:20px;
+}
+.loggedout #featured-photo {
+position:relative;
+}
+.loggedout #featured-photo h2 {
+background:none repeat scroll 0 0 #FFFFFF;
+color:#000000;
+font-size:14px;
+left:8px;
+opacity:0.8;
+padding:6px;
+position:absolute;
+text-align:center;
+top:0;
+z-index:2;
+}
+.loggedout #featured-photo img {
+vertical-align:bottom;
+}
+.loggedout #featured-photo .main-image img {
+height:197px;
+width:296px;
+}
+.loggedout #featured-photo cite {
+background:none repeat scroll 0 0 #000000;
+bottom:0;
+color:#FFFFFF;
+font-size:12px;
+font-weight:bold;
+left:8px;
+opacity:0.8;
+padding:5px 10px 5px 5px;
+position:absolute;
+z-index:2;
+}
+.loggedout #featured-photo cite a {
+color:#FFFFFF;
+}
+.loggedout #home-top {
+background:none repeat scroll 0 0 #F3F3F3;
+overflow:hidden;
+}
+.loggedout #home ul.button-nav {
+height:34px;
+margin:20px 0 0;
+}
+.loggedout #home ul.button-nav li {
+float:right;
+text-align:center;
+width:50%;
+}
+.loggedout #home ul.button-nav li a.Butt {
+display:block;
+float:right;
+padding-left:0;
+padding-right:0;
+width:145px;
+}
+.loggedout #home ul.button-nav li.last a.Butt {
+float:left;
+}
+.loggedout #home a.Butt[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+text-indent:-9999em;
+}
+.loggedout #stats-strip {
+background:none repeat scroll 0 0 #F3F3F3;
+font-size:12px;
+overflow:hidden;
+padding:8px;
+width:280px;
+}
+.loggedout #stats-strip form {
+margin:4px 0 10px;
+overflow:hidden;
+}
+.loggedout #stats-strip form .form-field {
+float:left;
+font-size:18px;
+margin:0;
+padding:5px;
+width:182px;
+}
+.loggedout #stats-strip form .form-submit {
+display:block;
+float:left;
+margin:0 0 0 6px;
+padding-left:0;
+padding-right:0;
+text-align:center;
+width:92px;
+}
+.loggedout #stats-strip ul li {
+float:left;
+margin-right:3px;
+}
+.loggedout #stats-strip ul li.tour {
+margin-right:0;
+}
+.loggedout[orient="landscape"] #home > div:not(.footer) {
+overflow:hidden;
+}
+.loggedout[orient="landscape"] #home-top {
+position:relative;
+}
+.loggedout[orient="landscape"] #featured-photo {
+float:left;
+width:50%;
+}
+.loggedout[orient="landscape"] #featured-photo h2 {
+font-size:11px;
+}
+.loggedout[orient="landscape"] #featured-photo .main-image img {
+height:auto;
+width:100%;
+}
+.loggedout[orient="landscape"] #home ul.button-nav {
+margin:8px 0 32px;
+}
+.loggedout[orient="landscape"] #home ul.button-nav li {
+width:auto;
+}
+.loggedout[orient="landscape"] #home ul.button-nav li.last {
+padding-right:8px;
+}
+.loggedout[orient="landscape"] #home ul.button-nav li.last a.Butt {
+float:right;
+}
+.loggedout[orient="landscape"] #stats-strip {
+float:right;
+padding:8px 0;
+width:50%;
+}
+.loggedout[orient="landscape"] #stats-strip form {
+padding:0 8px;
+}
+.loggedout[orient="landscape"] #stats-strip form .form-field {
+width:100%;
+}
+.loggedout[orient="landscape"] #stats-strip form .form-submit {
+float:right;
+margin:8px 0 0;
+}
+.loggedout[orient="landscape"] #stats-strip ul {
+bottom:8px;
+font-size:10px;
+padding-left:8px;
+position:absolute;
+}
+.photo-page .photo-main {
+min-width:320px;
+}
+.photo-page .contact-title {
+border-bottom:1px solid #E0E0E0;
+}
+.photo-page .photo_container {
+display:block;
+margin:5px;
+}
+.photo-page .photo_meta {
+padding:5px;
+}
+.photo-page .photo_meta h2 {
+font-weight:normal;
+}
+.photo-page .photo_meta .description {
+font-size:13px;
+}
+.photo-page .photo_meta .browse {
+font-size:13px;
+}
+.description {
+margin:10px 0;
+padding:0;
+}
+.photo-page .copyright {
+color:#999999;
+font-size:11px;
+line-height:16px;
+margin-bottom:15px;
+}
+.photo-page .copyright .privacy img, .photo-page .copyright .license img {
+margin-bottom:-4px;
+vertical-align:inherit !important;
+}
+.photo-page h3 {
+color:#000000;
+font-size:14px;
+padding:5px;
+}
+.photo-page .photo_comments_count span {
+font-size:11px;
+padding-left:10px;
+}
+.photo-page .comment {
+margin:0 0 8px;
+overflow:hidden;
+padding:5px 5px 0;
+}
+.photo-page .comment p, .photo-page .comment div {
+font-size:13px;
+}
+.photo-page .comment small {
+color:#999999;
+display:block;
+font-size:11px;
+margin-top:3px;
+}
+.photo-page .comment .img_block {
+background:none repeat scroll 0 0 #EEEEEE;
+height:48px;
+position:absolute;
+width:48px;
+}
+.photo-page .comment .meta_block {
+padding-left:55px;
+}
+.photo-page .comment .meta_block h4 {
+font-size:13px;
+font-weight:bold;
+margin-bottom:3px;
+}
+.photo-page .comment .meta_block .photo_container {
+background:none repeat scroll 0 0 transparent;
+}
+.photo-page .comment .meta_block img.notsowide {
+height:auto;
+max-width:250px;
+}
+.photo-page .photo_comments h3 {
+margin-top:20px;
+}
+.photo-page .photo_comments h3.solo {
+margin-top:0;
+}
+.photo-page .pagination {
+margin-bottom:10px;
+overflow:hidden;
+padding:5px;
+position:relative;
+}
+.photo-page .pagination a.pagination-next {
+float:right;
+min-width:55px;
+padding:10px 15px;
+text-align:center;
+}
+.photo-page .pagination a.pagination-prev {
+float:left;
+min-width:55px;
+padding:10px 15px;
+text-align:center;
+}
+.photo-page .pagination .pagination-info {
+color:#999999;
+display:block;
+font-size:11px;
+left:50%;
+margin-left:-75px;
+position:absolute;
+text-align:center;
+top:15px;
+width:150px;
+}
+.photo-page .pagination a.Butt[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+text-indent:-9999em;
+}
+.paging_div {
+padding:10px;
+}
+.paging_more_div {
+-moz-border-radius:8px 8px 8px 8px;
+background-color:#0063DC;
+border:medium none;
+color:#FFFFFF;
+float:right;
+padding:10px;
+}
+.paging_info_div {
+float:left;
+padding:10px;
+}
+.paging_loading_div {
+display:none;
+float:right;
+padding:10px;
+}
+.photo_container {
+background:none repeat scroll 0 0 #EEEEEE;
+position:relative;
+}
+.photo_container a .main_photo_overlay {
+display:none;
+}
+.photo_container a[selected="progress"] .main_photo_overlay {
+-moz-border-radius:6px 6px 6px 6px;
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #FFFFFF;
+display:block;
+height:26px;
+left:50%;
+margin:-13px 0 0 -18px;
+position:absolute;
+top:50%;
+width:35px;
+}
+.photo_container a .main_video_overlay {
+background:url("http://l.yimg.com/g/images/iphone/video_play_icon_large.png.v1") repeat scroll 0 0 transparent;
+display:block;
+height:38px;
+left:50%;
+margin:-19px 0 0 -33px;
+position:absolute;
+top:50%;
+width:66px;
+}
+.photo_container .pc_link img {
+border:medium none;
+position:absolute;
+}
+.pc_iphone_list .pc_link img {
+bottom:0;
+height:10px;
+left:2px;
+width:10px;
+}
+.pc_m .pc_link img {
+bottom:2px;
+height:15px;
+left:4px;
+width:22px;
+}
+.action-thumb .pc_link img {
+bottom:5px;
+left:7px;
+}
+.photo_container .video-re-encoding {
+background:url("http://l.yimg.com/g/images/progress/balls-24x12-black.gif") no-repeat scroll 68px 10px #000000;
+color:#FFFFFF;
+font-size:11px;
+height:78px;
+padding:32px 10px 10px;
+text-align:center;
+width:140px;
+}
+.pro-icon {
+background:url("http://l.yimg.com/g/images/iphone/sprite_photo_toolbar_v3.png.v1") no-repeat scroll center -169px transparent;
+line-height:12px;
+padding:0 10px;
+}
+.photo_nav {
+float:right;
+margin-right:5px;
+width:65px;
+}
+.photo_nav > a {
+background:none repeat scroll 0 0 #EEEEEE;
+display:block;
+height:65px;
+margin:0 0 5px;
+padding:0;
+}
+.photo_nav .next_photo_overlay {
+background:url("http://l.yimg.com/g/images/iphone/sprite_photo_toolbar_v3.png.v1") no-repeat scroll center 21px transparent;
+display:block;
+height:65px;
+left:0;
+position:absolute;
+top:0;
+width:65px;
+}
+.photo_nav .prev_photo_overlay {
+background:url("http://l.yimg.com/g/images/iphone/sprite_photo_toolbar_v3.png.v1") no-repeat scroll center -22px transparent;
+display:block;
+height:65px;
+left:0;
+position:absolute;
+top:0;
+width:65px;
+}
+.photo_nav .next_photo_div[selected="progress"] .next_photo_overlay, .photo_nav .prev_photo_div[selected="progress"] .prev_photo_overlay {
+-moz-border-radius:6px 6px 6px 6px;
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #FFFFFF;
+height:26px;
+left:15px;
+top:20px;
+width:35px;
+}
+.photo_nav .next_photo_div {
+position:relative;
+}
+.photo_nav .prev_photo_div {
+background-position:center -36px;
+position:relative;
+}
+.photo_nav .next_photo_div.disabled, .photo_nav .next_photo_div.disabled[selected="progress"], .photo_nav .prev_photo_div.disabled, .photo_nav .prev_photo_div.disabled[selected="progress"] {
+background:none repeat scroll 0 0 #EEEEEE;
+color:#9D9D9D;
+font-size:12px;
+height:65px;
+padding:0 5px;
+text-align:center;
+width:55px;
+}
+.photo_nav .next_photo_div.disabled > span, .photo_nav .prev_photo_div.disabled > span {
+display:table-cell;
+height:65px;
+vertical-align:middle;
+}
+.photo_nav .next_photo_div[selected="progress"], .photo_nav .prev_photo_div[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center transparent;
+}
+.photo_nav .fave_photo_div {
+background:url("http://l.yimg.com/g/images/iphone/sprite_photo_toolbar_v3.png.v1") no-repeat scroll 22px -87px #EEEEEE;
+height:20px;
+padding:10px 0;
+}
+.photo_nav .fave_photo_div.favd {
+background-position:22px -126px;
+}
+.photo_comments form {
+margin-top:-1px;
+overflow:hidden;
+padding:0 5px;
+}
+.photo_comments form p {
+font-size:12px;
+padding:16px 0 10px;
+}
+.photo-page .message {
+font-size:18px;
+height:88px;
+width:100%;
+}
+.photo_comments .comment-buttons {
+overflow:hidden;
+}
+.photo_comments .comment-buttons a, .photo_comments .comment-buttons span {
+display:block;
+float:left;
+}
+.photo_comments .comment-buttons .some-html-link {
+background:url("http://l.yimg.com/g/images/iphone/caret_closed.gif") no-repeat scroll 0 2px transparent;
+display:block;
+float:left;
+font-size:11px;
+margin-top:-10px;
+padding:0 0 0 9px;
+}
+.photo_comments .comment-buttons .some-html-link.open {
+background:url("http://l.yimg.com/g/images/iphone/caret_open.gif") no-repeat scroll 0 3px transparent;
+}
+.photo_comments .comment-buttons .some-html-link a {
+display:inline;
+float:none;
+}
+.photo_comments .comment-buttons .preview-comment, .photo_comments .comment-buttons .post-comment {
+margin-left:12px;
+margin-top:-10px;
+min-width:100px;
+text-align:center;
+}
+.photo_comments .comment-buttons .post-comment {
+float:right;
+}
+.photo_comments .comment-buttons .preview-comment[selected="progress"], .photo_comments .comment-buttons .post-comment[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+text-indent:-9999em;
+}
+.photo_comments .some-html {
+-moz-border-radius:6px 6px 6px 6px;
+border:1px solid #CCCCCC;
+color:#000000;
+display:none;
+float:left;
+font-size:13px;
+padding:8px 5px 3px;
+}
+.photo_comments .some-html h3 {
+margin-top:0;
+padding-left:0;
+}
+.photo_comments .some-html p {
+padding:0 0 4px;
+}
+.photo_comments .taglist {
+border-collapse:collapse;
+font-size:12px;
+}
+.photo_comments .taglist th {
+font-weight:bold;
+padding:5px 8px;
+text-align:left;
+}
+.photo_comments .taglist td {
+background:none repeat scroll 0 0 #FFFFFF;
+border-top:1px solid #CCCCCC;
+padding:4px 8px;
+}
+.photo_comments .taglist td.tag {
+padding-right:5em;
+}
+.photo_comments .taglist_example_div {
+background-color:#EEEEEE;
+}
+.photo_comments .taglist_copy_div, .photo_comments .taglist_example_div {
+color:#666666;
+display:block;
+margin:0 0 10px;
+padding:0;
+}
+.photo_comments .taglist_example_div {
+background:none repeat scroll 0 0 #FFFFFF;
+color:#000000;
+font-size:11px;
+padding:4px;
+}
+body > div.photo-page-large {
+margin-top:-81px;
+min-height:417px;
+}
+body[orient="landscape"] > div.photo-page-large {
+min-height:313px;
+}
+.photo-page-large .large-photo-title {
+border-bottom:5px solid #EEEEEE;
+font-size:13px;
+margin:0 5px;
+padding:10px 0;
+}
+.photo-page-large .available-sizes {
+margin:6px 0 4px 5px;
+overflow:hidden;
+padding-bottom:1px;
+}
+.photo-page-large .available-sizes li {
+border-left:1px solid #EEEEEE;
+display:block;
+float:left;
+text-align:center;
+}
+.photo-page-large .available-sizes li.last {
+border-right:1px solid #EEEEEE;
+}
+.photo-page-large .available-sizes li.selected {
+background-color:#F6F6F6;
+}
+.photo-page-large .available-sizes li a {
+display:block;
+padding:0 10px 3px;
+}
+.photo-page-large .available-sizes li a[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+}
+.photo-page-large .available-sizes li a[selected="progress"] > span {
+visibility:hidden;
+}
+.photo-page-large .available-sizes li a strong {
+font-size:13px;
+font-weight:normal;
+}
+.photo-page-large .available-sizes li.selected a {
+color:#000000;
+}
+.photo-page-large .available-sizes li.selected a strong {
+font-weight:bold;
+}
+.photo-page-large .available-sizes li a .Dimensions {
+color:#999999;
+display:block;
+font-size:11px;
+margin-top:1px;
+}
+.photo-page-large .photo_meta {
+font-size:13px;
+}
+.photo-page-large .photo_meta .license {
+color:#999999;
+font-size:11px;
+line-height:16px;
+margin-top:6px;
+}
+.photo-page-large .photo_meta .license .ccIcn img {
+margin-bottom:-4px;
+vertical-align:inherit !important;
+}
+.photo-page-large .photo_meta .license a {
+color:#999999;
+font-size:11px;
+}
+.more-info h3 {
+color:#000000;
+font-weight:bold;
+margin-top:3px;
+padding:5px 12px;
+}
+.more-info ul {
+margin:10px 0 0 37px;
+}
+.more-info ul li {
+font-size:13px;
+list-style-type:circle;
+margin-bottom:7px;
+}
+.more-info ul li.license, .more-info ul li.privacy {
+list-style-type:none;
+margin-left:-17px;
+}
+.more-info ul li.section-end {
+margin-bottom:16px;
+}
+.more-info ul li img {
+vertical-align:bottom;
+}
+.more-info ul li b {
+font-weight:normal;
+}
+body > div.action {
+overflow:hidden;
+}
+.action h2 {
+color:#000000;
+font-size:14px;
+margin:8px 12px 12px;
+padding:0;
+}
+.action h3 {
+margin-bottom:4px;
+padding:0;
+}
+.action div.action-thumb {
+background:none repeat scroll 0 0 transparent;
+margin-bottom:10px;
+margin-left:12px;
+margin-right:5px;
+}
+.action div.action-thumb img:not(.trans_png) {
+background:none repeat scroll 0 0 #EEEEEE;
+border:5px solid #F5F5F5;
+}
+.action .action-content {
+margin-left:12px;
+margin-right:12px;
+}
+.action textarea {
+font-size:18px;
+height:132px;
+width:296px;
+}
+.action input.text {
+font-size:18px;
+margin:0;
+padding:0;
+width:296px;
+}
+.action .indent {
+margin-left:20px;
+}
+.action .action-button {
+margin-top:-10px;
+overflow:hidden;
+padding-top:10px;
+}
+.action .comment-author {
+margin-top:10px;
+}
+.action .safety-options, .action .privacy-options {
+margin-bottom:28px;
+}
+.action .safety-options li, .action .privacy-options li {
+margin-bottom:4px;
+}
+.action .safety-options li .desc, .action .privacy-options li .note {
+color:#999999;
+font-size:11px;
+}
+.action .safety-options li {
+margin-bottom:8px;
+padding-left:18px;
+}
+.action .safety-options li input {
+margin-left:-18px;
+}
+body[orient="landscape"] .action .action-thumb {
+float:left;
+margin-right:0;
+}
+body[orient="landscape"] .action .action-content {
+float:left;
+width:334px;
+}
+body[orient="landscape"] .action textarea {
+height:88px;
+width:334px;
+}
+body[orient="landscape"] .action input.text {
+width:334px;
+}
+body[orient="landscape"] .action .action-button {
+float:left;
+}
+body[orient="landscape"] .action .return-link {
+float:right;
+}
+.action .photo_container {
+margin:0;
+padding:0;
+}
+.action .action-content p, .action .action-content table {
+font-size:13px;
+margin-bottom:20px;
+}
+.action .action-content table td {
+padding:4px;
+}
+.action .action-content .comment {
+background:none repeat scroll 0 0 #EEEEEE;
+margin-bottom:21px;
+padding:5px;
+}
+.action .action-content .comment p {
+margin-bottom:0;
+}
+.action .action-button .Butt {
+float:left;
+margin-top:-10px;
+min-width:100px;
+text-align:center;
+}
+.action .action-button .Butt[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+text-indent:-9999em;
+}
+.action .footer {
+clear:both;
+}
+.restricted-downloads {
+color:#666666;
+font-style:italic;
+}
+.Interst {
+margin-top:-6px;
+padding:0 0 8px;
+text-align:center;
+width:auto;
+}
+.Interst h3 {
+margin-bottom:12px;
+}
+.Interst .confirmation_button {
+padding:18px 0 16px;
+}
+.Interst .confirmation_button a.Butt {
+display:block;
+margin:0 auto;
+width:130px;
+}
+.Interst .confirmation_button a.Butt[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+text-indent:-9999em;
+}
+.InterstFoot {
+background:none repeat scroll 0 0 #F1F6FB;
+margin:20px 0 0;
+padding:17px;
+text-align:left;
+vertical-align:middle;
+}
+.InterstFoot h3 {
+background:url("http://l.yimg.com/g/images/iphone/icon_info_12.png") no-repeat scroll 0 1px transparent;
+font-weight:bold;
+margin:0 0 12px;
+padding:0 0 0 19px;
+}
+.InterstFoot p {
+color:#000000;
+font-size:13px;
+margin:0;
+}
+ul.photo-list li {
+font-size:14px;
+font-weight:normal;
+min-height:50px;
+padding:5px 0 5px 5px;
+}
+ul.photo-list li.contact-title {
+color:#000000;
+font-size:14px;
+font-weight:bold;
+min-height:0;
+overflow:hidden;
+padding:9px 34px 5px 5px;
+position:relative;
+}
+ul.photo-list li.contact-title img {
+float:left;
+margin-right:5px;
+margin-top:-4px;
+}
+ul.photo-list li.contact-title a {
+background:none repeat scroll 0 0 transparent;
+color:#0063DC;
+display:inline;
+margin:0;
+padding:0;
+}
+ul.photo-list li.contact-title a.contact-more {
+background:url("http://l.yimg.com/g/images/iphone/sprite_photo_toolbar_v3.png.v1") no-repeat scroll center -188px #F3F3F3;
+display:block;
+height:24px;
+margin:0;
+min-height:0;
+padding:0;
+position:absolute;
+right:5px;
+top:5px;
+width:24px;
+}
+ul.photo-list li.contact-title a.contact-more span {
+display:block;
+left:-999em;
+position:absolute;
+}
+ul.photo-list li.contact-title a.contact-more-selected {
+background-position:center -213px;
+}
+ul.photo-list li.contact-title a[selected="progress"] {
+background:none repeat scroll 0 0 transparent !important;
+}
+ul.photo-list li.contact-title a.contact-more[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #F3F3F3 !important;
+padding:0 4px;
+}
+ul.photo-list li.title a {
+background:none repeat scroll 0 0 transparent;
+color:#0063DC;
+display:inline;
+}
+ul.photo-list li.title .subtitle {
+color:#999999;
+font-size:11px;
+font-weight:normal;
+}
+ul.photo-list li.attribution, ul.photo-list li.description {
+color:#000000;
+font-size:13px;
+font-weight:normal;
+min-height:0;
+}
+ul.photo-list li.attribution a, ul.photo-list li.description a {
+background:none repeat scroll 0 0 transparent;
+color:#0063DC;
+display:inline;
+margin:0;
+padding:0;
+}
+ul.photo-list li.search-title {
+min-height:0;
+padding:5px;
+}
+ul.photo-list li.search-title-not-found {
+min-height:0;
+padding:9px 5px 5px;
+}
+ul.photo-list li.search-title .subtitle {
+font-weight:normal;
+}
+ul.photo-list li.search-title .not-found-subtitle {
+border-top:1px solid #E0E0E0;
+display:block;
+font-size:13px;
+margin:8px -5px 0;
+padding:12px 24px;
+text-align:center;
+}
+ul.photo-list li.search-title .queryterm {
+background:none repeat scroll 0 0 #FFFFD3;
+color:#333333;
+font-weight:bold;
+}
+ul.photo-list li.not-found {
+color:#999999;
+font-size:13px;
+min-height:0;
+padding:12px 24px;
+text-align:center;
+}
+ul.photo-list li.geo-not-found {
+font-size:12px;
+min-height:0;
+padding:0 6px;
+}
+ul.photo-list li.geo-not-found p {
+margin-bottom:16px;
+}
+ul.photo-list li.geo-not-found p.first {
+margin-top:8px;
+}
+ul.photo-list li.geo-not-found p.last {
+margin-bottom:8px;
+}
+ul.photo-list li a {
+margin:-5px 0 -5px -5px;
+min-height:50px;
+overflow:hidden;
+padding:5px 32px 5px 5px;
+}
+ul.photo-list li a.Butt {
+margin:0;
+padding:10px;
+}
+ul.photo-list li .img_block {
+background:none repeat scroll 0 0 #EEEEEE;
+display:block;
+height:50px;
+position:absolute;
+width:50px;
+}
+ul.photo-list li .set_block, ul.photo-list li .gallery_block {
+background:url("http://l.yimg.com/g/images/iphone/set_case.gif") no-repeat scroll 0 0 transparent;
+height:62px;
+margin-right:0;
+padding:6px 0 0 6px;
+width:63px;
+}
+ul.photo-list li .gallery_block {
+background-image:url("http://l.yimg.com/g/images/iphone/gallery_case.gif");
+}
+ul.photo-list li .set_block img, ul.photo-list li .gallery_block img {
+border:1px solid #000000;
+}
+ul.photo-list li .set_block .pc_link, ul.photo-list li .gallery_block .pc_link {
+display:none;
+}
+ul.photo-list li .collection_block {
+height:68px;
+width:91px;
+}
+ul.photo-list li a.photo_container .main_video_overlay {
+background:url("http://l.yimg.com/g/images/iphone/video_play_icon_large.png.v1") repeat scroll 0 0 transparent;
+display:block;
+height:38px;
+left:50%;
+margin:-19px 0 0 -33px;
+position:absolute;
+top:50%;
+width:66px;
+}
+ul.photo-list li .meta_block {
+margin-right:8px;
+padding-left:55px;
+width:207px;
+}
+body[orient="landscape"] ul.photo-list li .meta_block {
+width:367px;
+}
+ul.photo-list li .meta_block_set, body[orient="landscape"] ul.photo-list li .meta_block_set {
+padding-left:69px;
+width:auto;
+}
+ul.photo-list li .meta_block_collection, body[orient="landscape"] ul.photo-list li .meta_block_collection {
+padding-left:96px;
+width:auto;
+}
+ul.photo-list li .meta_block p {
+margin-bottom:3px;
+}
+ul.photo-list li .meta_block .privacy, ul.photo-list li .meta_block .from, ul.photo-list li .meta_block .uploaded, ul.photo-list li .meta_block .comments {
+color:#999999;
+font-size:11px;
+}
+ul.photo-list.thumb-view {
+padding:0 0 4px;
+}
+ul.photo-list.thumb-view li {
+border:0 none;
+float:left;
+margin:4px 0 0 4px;
+padding:0;
+}
+ul.photo-list.thumb-view li.title, ul.photo-list.thumb-view li.contact-title {
+float:none;
+margin:0;
+min-height:0;
+padding:9px 35px 5px 5px;
+}
+ul.photo-list.thumb-view li.attribution, ul.photo-list.thumb-view li.description {
+float:none;
+margin:0;
+padding:9px 5px 5px;
+}
+ul.photo-list.thumb-view li.pagination {
+clear:both;
+float:none;
+margin:0;
+padding:5px 4px;
+}
+ul.photo-list.thumb-view li.not-found {
+border-color:#E0E0E0;
+border-style:solid;
+border-width:1px 0;
+clear:both;
+float:none;
+margin:0;
+padding:12px 24px;
+}
+ul.photo-list.thumb-view .footer {
+clear:both;
+float:none;
+}
+ul.photo-list.thumb-view li a {
+margin:0;
+padding:0;
+}
+ul.photo-list.thumb-view li a.Butt {
+background:none repeat scroll 0 0 #0063DC;
+padding:10px;
+}
+ul.photo-list.thumb-view li .img_block {
+background:none repeat scroll 0 0 #EEEEEE;
+height:75px;
+margin:0;
+position:relative;
+width:75px;
+}
+ul.photo-list.thumb-view li a .img_block .loading-overlay {
+-moz-border-radius:6px 6px 6px 6px;
+height:26px;
+left:20px;
+position:absolute;
+top:25px;
+width:35px;
+z-index:10;
+}
+ul.photo-list.thumb-view li a[selected="progress"] .img_block .loading-overlay {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #FFFFFF;
+}
+ul.photo-list.gallery-view {
+padding:0 0 4px;
+}
+ul.photo-list.gallery-view li {
+border:0 none;
+padding-bottom:10px;
+}
+ul.photo-list.gallery-view li.title, ul.photo-list.gallery-view li.contact-title {
+float:none;
+margin:0;
+min-height:0;
+padding:9px 35px 5px 5px;
+}
+ul.photo-list.gallery-view li.attribution, ul.photo-list.gallery-view li.description {
+float:none;
+margin:0;
+padding:9px 5px 5px;
+}
+ul.photo-list.gallery-view li.pagination {
+clear:both;
+float:none;
+margin:0;
+padding:5px 4px;
+}
+ul.photo-list.gallery-view li.not-found {
+border-color:#E0E0E0;
+border-style:solid;
+border-width:1px 0;
+clear:both;
+float:none;
+margin:0;
+padding:12px 24px;
+}
+ul.photo-list.gallery-view .footer {
+clear:both;
+float:none;
+}
+ul.photo-list.gallery-view li a:not(.Butt) {
+display:inline;
+margin:0;
+padding:0;
+}
+ul.photo-list.gallery-view li a.img_block {
+background:none repeat scroll 0 0 #EEEEEE;
+display:block;
+height:auto;
+margin:0;
+overflow:hidden;
+padding:0;
+position:relative;
+width:auto;
+}
+ul.photo-list.gallery-view li a.img_block .loading-overlay {
+-moz-border-radius:6px 6px 6px 6px;
+height:26px;
+left:50%;
+margin:-13px 0 0 -17px;
+position:absolute;
+top:50%;
+width:35px;
+z-index:10;
+}
+ul.photo-list.gallery-view li a.img_block[selected="progress"] .loading-overlay {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #FFFFFF;
+}
+ul.photo-list.gallery-view li .meta_block {
+margin-top:4px;
+padding-left:0;
+width:310px;
+}
+body[orient="landscape"] ul.photo-list.gallery-view li .meta_block {
+width:469px;
+}
+ul.photo-list.gallery-view li .gallery_comment {
+font-size:13px;
+margin-bottom:12px;
+}
+ul.photo-list.gallery-view li .gallery_comment a {
+display:inline;
+margin:0;
+padding:0;
+}
+ul.photo-list.gallery-view li .meta_block .photo-title {
+color:#000000;
+font-size:11px;
+padding:4px 0 2px 28px;
+position:relative;
+}
+ul.photo-list.gallery-view li .meta_block .photo-title .buddy-icon {
+display:block;
+left:0;
+position:absolute;
+top:6px;
+}
+ul.photo-list.gallery-view li .meta_block .photo-title .title {
+font-size:13px;
+}
+ul.photo-list.gallery-view li.comments .comment .img_block {
+background:none repeat scroll 0 0 #EEEEEE;
+height:48px;
+position:absolute;
+width:48px;
+}
+ul.photo-list.gallery-view li.comments .comment .meta_block {
+margin-top:0;
+padding-left:55px;
+width:250px;
+}
+body[orient="landscape"] ul.photo-list.gallery-view li.comments .comment .meta_block {
+width:409px;
+}
+ul.photo-list.gallery-view li.comments a:not(.Butt) {
+margin:0;
+min-height:0;
+padding:0;
+}
+ul.photo-list.gallery-view li.comments a.pro-icon {
+padding:0 10px;
+}
+ul.photo-list.gallery-view li.comments a.Butt {
+min-height:0;
+}
+ul.photo-list li.code-message {
+background:none repeat scroll 0 0 #FFFDD3;
+color:#000000;
+padding:5px;
+width:100%;
+}
+ul.set-list li a, ul.collection-list li a {
+min-height:68px;
+}
+ul.contact-list li {
+font-size:14px;
+font-weight:normal;
+min-height:48px;
+padding:5px 0 5px 5px;
+position:relative;
+}
+ul.contact-list li.sub-bar {
+min-height:0;
+padding:5px;
+}
+ul.contact-list li.sub-bar a {
+display:none;
+}
+ul.contact-list li.search-title {
+min-height:0;
+padding:5px;
+}
+ul.contact-list li.search-title-not-found {
+padding:9px 5px 5px;
+}
+ul.contact-list li.search-title .subtitle {
+color:#999999;
+font-size:11px;
+font-weight:normal;
+}
+ul.contact-list li.search-title .queryterm {
+background:none repeat scroll 0 0 #FFFFD3;
+color:#333333;
+font-weight:bold;
+}
+ul.contact-list li.search-title .not-found-subtitle {
+border-top:1px solid #E0E0E0;
+display:block;
+font-size:13px;
+margin:8px -5px 0;
+padding:12px 24px;
+text-align:center;
+}
+ul.contact-list li.not-found {
+color:#999999;
+font-size:13px;
+min-height:0;
+padding:12px 24px;
+text-align:center;
+}
+ul.contact-list li a {
+margin:-5px 0 -5px -5px;
+min-height:48px;
+overflow:hidden;
+padding:5px 32px 5px 5px;
+}
+ul.contact-list li a.Butt {
+margin:0;
+padding:10px;
+}
+ul.contact-list li .img_block {
+background:none repeat scroll 0 0 #EEEEEE;
+display:block;
+height:48px;
+position:absolute;
+width:48px;
+}
+ul.contact-list li .meta_block {
+margin:0 8px 0 55px;
+}
+ul.contact-list li p {
+color:#999999;
+font-size:11px;
+}
+ul.contact-list li p.contact-username {
+color:#000000;
+font-size:20px;
+font-weight:normal;
+margin-bottom:0;
+}
+ul.contact-list li p.contact-name {
+color:#333333;
+font-weight:bold;
+margin-bottom:2px;
+}
+.contact-list-filter {
+font-size:14px;
+margin:0;
+padding:4px;
+width:100%;
+}
+body.scrumjax-search ul.contact-list li.sub-bar a.Butt {
+display:block;
+float:left;
+min-height:0;
+padding:7px 10px 6px;
+text-align:center;
+width:18%;
+}
+body.scrumjax-search ul.contact-list li.sub-bar a.Butt[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+text-indent:-9999em;
+}
+body.scrumjax-search ul.contact-list li.sub-bar {
+overflow:hidden;
+}
+body.scrumjax-search ul.contact-list li.sub-bar .contact-list-filter {
+float:left;
+margin:0 4px 0 0;
+width:74%;
+}
+ul.contact-list li.no-results {
+color:#444444;
+display:none;
+min-height:0;
+padding:12px 24px 6px;
+text-align:center;
+}
+ul.contact-list li.no-results p {
+font-size:13px;
+margin-bottom:6px;
+}
+.searchable b, .contact-search-term {
+background:none repeat scroll 0 0 #FFFFD3;
+color:#333333;
+font-weight:bold;
+}
+.relationship > div {
+font-size:13px;
+padding:12px;
+}
+.relationship h3 {
+font-size:14px;
+margin-bottom:16px;
+}
+.relationship h4 {
+font-weight:bold;
+margin-bottom:14px;
+}
+.relationship p {
+margin-bottom:16px;
+}
+.relationship .footer p {
+margin-bottom:4px;
+}
+.relationship p.button-container {
+overflow:hidden;
+}
+.relationship .Butt {
+float:left;
+}
+.relationship .Butt[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+padding:10px 18px;
+text-indent:-9999em;
+}
+.relationship label {
+display:block;
+margin-bottom:3px;
+}
+.relationship label.sub {
+margin-left:20px;
+}
+.relationship span.note {
+color:#999999;
+font-size:11px;
+}
+.relationship .contact-remove-button, .relationship .contact-ok-button {
+min-width:120px;
+text-align:center;
+}
+.relationship .contact-remove-button {
+display:none;
+}
+.relationship .contact-remove-button[selected="progress"], .relationship .contact-ok-button[selected="progress"] {
+padding:10px;
+}
+ul.activity-list {
+padding-top:2px;
+}
+ul.activity-list li {
+font-size:14px;
+font-weight:normal;
+overflow:hidden;
+padding:5px 0 5px 5px;
+}
+ul.activity-list li.tt-noactivity {
+color:#999999;
+font-size:13px;
+padding:12px 24px;
+text-align:center;
+}
+ul.activity-list li .img_block {
+background:none repeat scroll 0 0 #EEEEEE;
+display:block;
+height:48px;
+position:absolute;
+width:48px;
+}
+ul.activity-list li .img_block .set_block, ul.activity-list li .img_block .gallery_block {
+background:url("http://l.yimg.com/g/images/iphone/set_case_small.gif") no-repeat scroll 0 0 transparent;
+display:block;
+height:51px;
+margin-right:0;
+padding:5px 0 0 5px;
+width:48px;
+}
+ul.activity-list li .img_block .gallery_block {
+background-image:url("http://l.yimg.com/g/images/iphone/gallery_case_small.gif");
+}
+ul.activity-list li .img_block .set_block img, ul.activity-list li .img_block .gallery_block img {
+border:1px solid #000000;
+}
+ul.activity-list li .img_block .set_block .pc_link, ul.activity-list li .img_block .set_block .pc_link {
+display:none;
+}
+ul.activity-list li .meta_block {
+min-height:50px;
+padding-left:55px;
+}
+ul.activity-list li .meta_block img.notsowide {
+height:auto;
+max-width:200px;
+}
+ul.activity-list li small {
+color:#999999;
+font-size:11px;
+font-weight:normal;
+}
+ul.activity-list li .comment-count {
+font-size:13px;
+margin:6px 0 2px;
+}
+ul.activity-list li.pagination {
+padding-right:5px;
+}
+ul.activity-list li a.Butt {
+margin:0;
+}
+ul.ra-items li {
+background:none repeat scroll 0 0 #FFFFFF;
+border:0 none;
+font-size:13px;
+min-height:24px;
+padding:5px 5px 5px 51px;
+position:relative;
+}
+ul.ra-items li span.ra-icon-container {
+background:url("http://l.yimg.com/g/images/iphone/sprite_activity_icons.png.v3") no-repeat scroll 0 0 #FFFFFF;
+display:block;
+height:20px;
+left:0;
+position:absolute;
+top:8px;
+width:20px;
+}
+ul.ra-items li.ra-item-mail, ul.ra-items li.ra-item-contact, ul.ra-items li.ra-item-contact-multi {
+padding-left:22px;
+}
+ul.ra-items li.ra-item-comment, ul.ra-items li.ra-item-set-comment span.ra-icon-container {
+background-position:0 0;
+}
+ul.ra-items li.ra-item-comment-multi span.ra-icon-container {
+background-position:0 0;
+}
+ul.ra-items li.ra-item-note span.ra-icon-container {
+background-position:-400px 0;
+}
+ul.ra-items li.ra-item-fav span.ra-icon-container {
+background-position:-1200px 0;
+}
+ul.ra-items li.ra-item-tag span.ra-icon-container {
+background-position:-800px 0;
+}
+ul.ra-items li.ra-item-mail span.ra-icon-container {
+background-position:-1600px 0;
+top:5px;
+}
+ul.ra-items li.ra-item-share span.ra-icon-container {
+background-position:-1600px 0;
+}
+ul.ra-items li.ra-item-gallery span.ra-icon-container {
+background-position:-3200px 0;
+}
+ul.ra-items li.ra-item-contact span.ra-icon-container, ul.ra-items li.ra-item-person span.ra-icon-container {
+background-position:-3600px 0;
+top:5px;
+}
+ul.ra-items li.ra-item-contact-multi span.ra-icon-container {
+background-position:-2800px 0;
+top:5px;
+}
+ul.ra-items li.ra-item-more span.ra-icon-container {
+background-image:none;
+}
+ul.ra-items li .YouSaid, ul.ra-items li .YouSaid strong, ul.ra-items li .YouSaid small {
+color:#999999;
+font-style:italic;
+}
+ul.ra-items li.ra-item-person .YouSaid a {
+font-style:normal;
+font-weight:normal;
+}
+ul.ra-items li .ra-item-buddy-icon {
+background:none repeat scroll 0 0 #EEEEEE;
+display:block;
+height:24px;
+left:22px;
+position:absolute;
+width:24px;
+}
+ul.ra-items li.ra-item-comment .ra-item-desc strong, ul.ra-items li.ra-item-set-comment .ra-item-desc strong, ul.ra-items li.ra-item-note .ra-item-desc strong {
+display:block;
+}
+ul.ra-items li.ra-item-more .read-all {
+font-weight:bold;
+text-align:right;
+}
+#search > form {
+padding:12px;
+}
+#search > form.people {
+margin-bottom:35px;
+}
+#search h3 {
+color:#000000;
+}
+#search h4 {
+font-weight:bold;
+margin:16px 0 3px;
+}
+#search .search-field {
+font-size:18px;
+margin:4px 0;
+padding:2px;
+width:100%;
+}
+#search .who {
+font-size:15px;
+margin-bottom:6px;
+width:100%;
+}
+#search #search-submit {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll -100px -100px #0063DC;
+float:right;
+margin-top:-35px;
+min-width:80px;
+text-align:center;
+}
+#search #search-submit.solo {
+margin-top:0;
+}
+#search #search-submit[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+text-indent:-9999em;
+}
+#adv-search-options {
+display:none;
+font-size:13px;
+}
+#adv-search-toggle {
+background:url("http://l.yimg.com/g/images/iphone/caret_closed.gif") no-repeat scroll 0 4px transparent;
+display:block;
+font-size:13px;
+margin:0 0 20px;
+padding-left:9px;
+}
+ul.photo-list li.search-title .subtitle strong {
+font-weight:normal;
+}
+ul.photo-list li .search-sort {
+color:#999999;
+display:block;
+font-size:11px;
+font-weight:normal;
+margin-top:8px;
+}
+ul.contact-list li.search-title a, ul.photo-list li.search-title a {
+background:none repeat scroll 0 0 transparent;
+color:#0063DC;
+display:inline;
+margin:0;
+padding:0;
+}
+ul.photo-list li.search-title a[selected="progress"] {
+background:none repeat scroll 0 0 transparent !important;
+}
+ul.photo-list li .search-sort a.selected {
+color:inherit;
+}
+#upload-form {
+overflow:hidden;
+padding-bottom:24px;
+}
+#upload #upload-submit {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll -100px -100px #0063DC;
+clear:both;
+float:left;
+margin-top:-4px;
+min-width:80px;
+text-align:center;
+}
+#upload #upload-submit[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+text-indent:-9999em;
+}
+#upload dl dd a span {
+color:#088307;
+}
+#upload dl dd {
+margin-bottom:1em;
+}
+#upload table {
+margin-bottom:12px;
+width:100%;
+}
+#upload table th {
+border-bottom:1px solid #FFFFFF;
+font-size:13px;
+padding:1px 1em 1px 0;
+vertical-align:top;
+}
+#upload table td {
+background:none repeat scroll 0 0 #F3F3F3;
+border-bottom:1px solid #FFFFFF;
+font-size:13px;
+padding:1px 2px;
+vertical-align:top;
+}
+#upload table td span {
+color:#088307;
+}
+body > ul.photo-list.thumb-view > li.nearby-title {
+padding-bottom:0;
+}
+.nearby-map {
+position:relative;
+}
+.nearby-map-overlay {
+background:url("http://l.yimg.com/g/images/dot_main.png") no-repeat scroll 145px 66px transparent;
+height:154px;
+left:0;
+position:absolute;
+top:0;
+width:312px;
+}
+.content > div {
+font-size:13px;
+padding:12px;
+}
+.content h2 {
+font-size:14px;
+margin-bottom:16px;
+}
+.content h3 {
+font-size:12px;
+margin-bottom:8px;
+}
+.content p {
+margin-bottom:16px;
+}
+.content p.Problem {
+background:url("http://l.yimg.com/g/images/icon_alert_big.png") no-repeat scroll left top transparent;
+font-size:14px;
+padding:6px 0 6px 33px;
+}
+.content .footer p {
+margin-bottom:4px;
+}
+.content ul {
+list-style:circle outside none;
+padding-left:20px;
+}
+.content .help-item {
+margin:20px 0 24px;
+}
+.content .help-item h4 {
+font-weight:bold;
+margin-bottom:10px;
+}
+.mob-404 p {
+font-size:12px;
+}
+.page-not-found p.first, .dont-have-permission p.first {
+background:none repeat scroll 0 0 #FFFEF0;
+margin:40px 0 28px;
+padding:10px 6px;
+text-align:center;
+}
+ul.photo-list li.warn {
+background:none repeat scroll 0 0 #FFFEF0;
+float:none;
+margin:20px 0 0;
+min-height:0;
+padding:10px 6px;
+}
+ul.photo-list li.warn-details {
+background:none repeat scroll 0 0 #FFFEF0;
+float:none;
+margin:0;
+min-height:0;
+padding:0 27px 10px;
+}
+ul.photo-list li.warn .warning-icon, .page-not-found p.first .warning-icon, .dont-have-permission p.first .warning-icon {
+background:url("http://l.yimg.com/g/images/iphone/sprite_confirmation_icons.png") no-repeat scroll -20px 0 transparent;
+padding:0 10px 0 7px;
+}
+.authDetails h4 {
+font-weight:bold;
+margin-bottom:16px;
+}
+div.content p.auth-shortcode-container {
+background:none repeat scroll 0 0 #EFFAD7;
+margin-top:-16px;
+padding:16px 16px 28px;
+text-align:center;
+}
+.auth-shortcode {
+background:none repeat scroll 0 0 #000000;
+border:2px solid #FFFFFF;
+color:#FFFFFF;
+font-family:courier new,courier,monospace;
+font-size:20px;
+font-weight:bold;
+padding:10px;
+}
+.content.auth-done {
+padding-top:16px;
+}
+.content.auth-done p {
+padding:0 16px;
+}
+.content.auth-done p.auth-success {
+background:url("http://l.yimg.com/g/images/icon_check_small.png") no-repeat scroll 18px 19px #EFFAD7;
+margin-top:-16px;
+padding:16px 10px 16px 38px;
+}
+.content .authHead {
+background:url("http://l.yimg.com/g/images/icon_key_small.png") no-repeat scroll 17px 18px #FFFFCC;
+padding:16px 10px 16px 48px;
+}
+.content .authHead h2 {
+font-size:14px;
+font-weight:bold;
+margin:0;
+}
+.content .authHead p {
+color:#C21010;
+margin:12px 0 0 -30px;
+}
+.content .authHead p.authPartner {
+background:url("http://l.yimg.com/g/images/icon_trusted_partner.png") no-repeat scroll 19px 15px #E7FBCB;
+border-top:1px solid #FFFFFF;
+color:#000000;
+margin:16px -10px -16px -48px;
+padding:16px 10px 16px 48px;
+}
+.content .authHead p.authPartner em {
+color:#30A91C;
+font-style:normal;
+}
+.content .authHead p.authYahoo {
+background-image:url("http://l.yimg.com/g/images/icon_ides_yahoo_small.png");
+background-position:15px 11px;
+}
+.content .authHead p.authFlickr {
+background-image:url("http://l.yimg.com/g/images/icon_ides_flickr_dots_small.png");
+background-position:15px 11px;
+}
+.content .authHead p.authThirdParty {
+background:none repeat scroll 0 0 #FFFFCC;
+border-top:1px solid #FFFFFF;
+color:#C21010;
+margin:16px -10px -16px -48px;
+padding:16px 10px 16px 18px;
+}
+.content .authDetails {
+margin-top:8px;
+}
+.content .authPerms ul {
+list-style:none outside none;
+}
+.content .authPerms ul li {
+margin-bottom:16px;
+margin-left:4px;
+padding-left:22px;
+}
+.content .authPerms ul.allowed-perms li {
+background:url("http://l.yimg.com/g/images/icon_check_small.png") no-repeat scroll 2px 2px transparent;
+}
+.content .authPerms ul.disallowed-perms li {
+background:url("http://l.yimg.com/g/images/icon_error_x_smaller.png") no-repeat scroll 2px 2px transparent;
+}
+.authError {
+background:url("http://l.yimg.com/g/images/icon_alert.png") no-repeat scroll 18px 16px #FFFFCC;
+margin:-20px -12px 16px;
+padding:16px 10px 16px 38px;
+}
+.authError p.first {
+margin-top:0;
+}
+.authError p.last {
+margin-bottom:0;
+}
+.authErrorDetails {
+background:none repeat scroll 0 0 #000000;
+color:#00FF00;
+font-family:courier new,courier,monospace;
+font-weight:bold;
+padding:10px;
+}
+.content .authAbout {
+background:none repeat scroll 0 0 #F1F6FB;
+margin:16px -12px 0;
+padding:16px 18px 8px;
+}
+.content .authAbout h4.info-header {
+background:url("http://l.yimg.com/g/images/icon_info.gif") no-repeat scroll 0 0 transparent;
+padding-left:20px;
+}
+.content .authAbout h5 {
+font-size:13px;
+font-weight:bold;
+margin-bottom:16px;
+}
+#auth-allow-container {
+line-height:42px;
+padding:2px 0 9px;
+text-align:center;
+}
+#auth-allow {
+display:inline-block;
+line-height:34px;
+margin-right:3px;
+padding:0 10px;
+}
+.button-container .Butt span {
+padding:10px;
+}
+.button-container .Butt[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+}
+.button-container .Butt[selected="progress"] span {
+visibility:hidden;
+}
+form.button-container {
+padding:20px 0;
+text-align:center;
+}
+#request-from-unknown, #request-from-source {
+background:none repeat scroll 0 0 #F1F6FB;
+padding:10px 10px 0;
+}
+#request-or {
+margin-bottom:4px;
+margin-top:3px;
+text-align:center;
+}
+#request-from-unknown p, #request-from-source p {
+margin:0;
+}
+.sso-user {
+margin:18px 0 26px;
+}
+.sso-user span {
+background:none repeat scroll 0 0 #EDF3F9;
+padding:9px 5px;
+}
+.sso-user span img {
+vertical-align:middle;
+}
+.sso .confirmation_button_sso {
+padding-top:0;
+}
+#sso-toggle-submit {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll -100px -100px #0063DC;
+display:block;
+margin:0 auto;
+min-width:80px;
+text-align:center;
+}
+.content .signup p {
+margin-bottom:10px;
+}
+.content .signup p.centered {
+text-align:center;
+}
+.content .signup p.big {
+font-size:14px;
+}
+.content .signup p.subdue {
+color:#AAAAAA;
+font-size:11px;
+}
+.content .signup div.feature {
+background-color:#F7F7F7;
+margin:16px 0;
+padding:10px;
+text-align:left;
+}
+.content .signup div.feature.warning {
+background-color:#FFFFD4;
+}
+.content .signup div.feature ul {
+list-style:none outside none;
+margin:15px 0 0;
+}
+.content .signup div.feature li {
+margin:0;
+padding:0 8px 5px 0;
+position:relative;
+}
+.content .signup div.feature li:last-of-type {
+margin:0;
+padding-left:25px;
+position:relative;
+}
+.content .signup div.feature input {
+padding:6px;
+}
+.content .signup div.feature.warning .suggestions p {
+background:url("http://flickr.comhttp://l.yimg.com/g/images/icon_alert.png") no-repeat scroll left top transparent;
+padding-left:19px;
+}
+.content .signup div.feature .suggestions label span {
+margin-left:10px;
+}
+.content .signup div.feature .suggestions input[type="radio"] {
+left:0;
+position:absolute;
+top:0;
+}
+.content .signup div.feature .suggestions label input[type="radio"] {
+position:static;
+}
+.feature .suggestions input[name="screen_name"] {
+margin:0 25px 0 0;
+width:100%;
+}
+.feature .suggestions input.error[name="screen_name"] {
+border:1px solid #FF0000;
+}
+.abuse ul li {
+margin-bottom:6px;
+}
+.abuse input.text {
+font-size:18px;
+margin:0;
+padding:0;
+width:296px;
+}
+.abuse textarea {
+font-size:18px;
+height:132px;
+width:296px;
+}
+.abuse span.required {
+color:#999999;
+font-size:11px;
+}
+.abuse label {
+display:block;
+margin-bottom:4px;
+}
+.abuse .form-submit {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll -100px -100px #0063DC;
+float:left;
+margin:0 18px 0 0;
+min-width:80px;
+text-align:center;
+}
+.abuse .form-submit[selected="progress"] {
+background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+text-indent:-9999em;
+}
