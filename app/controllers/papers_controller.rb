@@ -13,18 +13,13 @@ class PapersController < ApplicationController
   # GET /papers/1
   # GET /papers/1.xml
   def show
-    @paper = if go = params[:go]
-      p = if go == "pre"
-        Paper.first(:conditions=>["id < ?", params[:id]], :order=>"id desc")
+    @paper = Paper.find(params[:id])
+    if go = params[:go]
+      if go == "pre"
+        @paper = @paper.prev||@paper
       else
-        Paper.first(:conditions=>["id > ?", params[:id]], :order => "id")
-      end
-      if p.nil?
-        p = Paper.find(params[:id])
-      end
-      p
-    else
-      Paper.find(params[:id])
+        @paper = @paper.next||@paper
+      end 
     end
     
     respond_to do |format|

@@ -32,6 +32,14 @@ class Paper < ActiveRecord::Base
       create_thumb_file(170,"#{REAL_FOLDER}/thumb/s")
     end
     
+    def prev(cond = nil)
+      Paper.first(:conditions=>["id < ?", self.id], :order=>"id desc")
+    end
+    
+    def next(cond = nil)
+      Paper.first(:conditions=>["id > ?", self.id], :order => "id")
+    end
+    
     
     def real_file
       File.join(REAL_FOLDER, image_path)

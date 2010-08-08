@@ -1,0 +1,124 @@
+<% @tags = Tag.all %>
+
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Iphone 墙纸</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="googlebot" content="noimageindex">
+	<link href="http://www.flickr.com/favicon.ico" rel="shortcut icon"> 
+	<link href="/apple-touch-icon.png" rel="apple-touch-icon">
+	<%= stylesheet_link_tag "/iphone/iphone", :cache => true %>
+	<%= javascript_include_tag "/iphone/iphone", :cache => true %>
+	
+	<script>
+		var F = F || {};
+		F.iphone = F.iphone || {};
+		
+		F.iphone.globals = {
+			loggedin: false,
+			redirected: false					};
+
+		F.iphone.format_strs = {
+		
+			thou_sep: ',',
+			dec_sep: '.',
+		
+			iphone_recent_uploads: '最新上載',
+			iphone_contact_list: '自己人名冊',
+			iphone_your_photostream: '你的所有內容',
+			iphone_more: '更多...',
+
+			edit_photo_confirmation: '已設定的標題和描述',
+			delete_photo_confirmation: '已刪除的相片',
+			edit_photo_license_confirmation: '已設定的授權',
+			edit_photo_privacy_confirmation: '已設定的相片私隱',
+			edit_photo_safety_confirmation: '已設定的安全層級',
+
+			add_comment_confirmation: '已增加的回應',
+			edit_comment_confirmation: '已編輯的回應',
+			delete_comment_confirmation: '已刪除的回應',
+
+			change_relationship_confirmation: '已變更的關係',
+			
+			upload_confirmation: '上載成功',
+			
+			no_connection_message: "無法連接到 flickr.com",
+			
+			contact_list_friend_and_family: '朋友和家人',
+			contact_list_friend: '朋友',
+			contact_list_family: '家人',
+			contact_list_contact: '聯絡',
+				
+			report_abuse_magic_field_empty: '你忘記了填寫神奇的 flickr 欄位。我們實在必須強調！',
+			report_abuse_magic_field_incorrect: 'Hrm。你在神奇的 flickr 欄位中輸入了錯誤的片語。我們實在必須強調！',
+			report_abuse_email_empty: '你需要告知我們你檢舉濫用的電郵地址。',
+			
+			contact_list_item: '項目',
+			contact_list_items: '項目',
+			
+			spam_url_warning: '因偵測到垃圾郵件 URL，描述未儲存。'
+			
+		};
+
+		F.iphone.urls = {
+			domain: 'http://m.flickr.com',
+			base: '/',
+			you_photostream: '/photos//',
+			contacts_uploads: '/people/',
+			contacts_list: '/people/contacts/',
+			photostream_base: '/photos/',
+			contact_search_base: '/search/advanced?contacts_only=true&w=people&q='
+		};
+	</script>
+
+</head>
+<body class="loggedout ">
+<!--<div id="beacon"><img src="http://geo.yahoo.com/f?s=792600060&t=152f68277f7a48d2ae7a5712da9b5089&fl_ev=0&lang=zh&intl=us" width="0" height="0" alt="" /></div>
+-->
+
+	
+	<div id="header" class="toolbar">
+		<div id="header-top">
+			<div id="logo">
+				<h1><a href="#home" id="logo-link" title="首頁"><img src="/iphone/images/flickr_logo.png" alt="Flickr" width="50" height="15"></a></h1>
+				<span id="global-loading"><img src="/iphone/images/balls-24x12-trans.gif" width="20" height="10" alt="正在加载..."></span>
+			</div>
+
+			<div id="signedin"><a href="/signin/" type="signin">登入</a></div>
+		</div>
+
+	
+		<div id="nav">
+			<ul id="nav_main">
+				<li id="welcome-tab" class="first"><a href="#home" type="nav">欢迎</a></li>
+        <li id="search-tab" class="last"><a href="#search" type="nav">搜索 </a></li>
+				<li id="explore-tab"><a href="/explore/interesting/">热门搜索</a></li>
+				<li id="nearby-tab"><a href="/nearby/" type="nav">注册</a></li>
+			</ul>
+
+			<ul id="nav_sub"></ul>
+		</div>	
+		
+		<div id="large-loader">载入中...</div>
+		
+		<div id="msg" class="msg">
+			<p id="msg-p"></p>
+			<span></span>
+			<a href="#" class="close" type="hide_message"><span></span></a>
+		</div>
+	</div> 
+	
+	<%= render :partial => 'mshared/home' %>
+	<div id="footer">
+		<p>Copyright © 2010 Yahoo! Inc. 版權所有 不得轉載</p>
+		<p class="plain"><a href="http://www.yahoo.com/" target="external">來自  Yahoo!</a> | <a href="http://www.flickr.com/privacy_policy.gne" target="external">個人隱私權</a> | <a href="http://www.flickr.com/terms.gne" target="external">使用條款</a></p>
+		<p><a href="http://www.flickr.com/" target="js" onclick="return F.iphone.setAllowWWWCookie();">flickr.com</a> | <a type="js" href="http://m.flickr.com/" onclick="return F.iphone.setRpCookie();">舊版 m.flickr.com</a> | <a class="report-abuse" href="/abuse/" type="report_abuse">檢舉濫用</a></p>
+	</div>	
+</body>
+</html>
+
+

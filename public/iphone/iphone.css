@@ -194,7 +194,7 @@ position:relative;
 top:-1px;
 }
 body > ul > li > a {
-background:url("http://l.yimg.com/g/images/iphone/list_arrow.png") no-repeat scroll right center transparent;
+background:url("/iphone/images/list_arrow.png") no-repeat scroll right center transparent;
 color:inherit;
 display:block;
 margin:-8px 0 -8px -10px;
@@ -202,7 +202,7 @@ padding:8px 32px 8px 10px;
 text-decoration:none;
 }
 body > ul > li > a[selected="progress"] {
-background-image:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") !important;
+background-image:url("/iphone/images/balls-24x12-trans.gif") !important;
 margin-right:6px;
 }
 body > ul > li.pagination {
@@ -236,7 +236,7 @@ top:16px;
 width:150px;
 }
 body > ul > li.pagination a.Butt[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
 text-indent:-9999em;
 }
 input {
@@ -253,7 +253,7 @@ padding:0;
 width:16px;
 }
 #preloader {
-background-image:url("http://l.yimg.com/g/images/iphone/list_arrow.png"), url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif"), url("http://l.yimg.com/g/images/iphone/sprite_activity_icons.png.v1"), url("http://l.yimg.com/g/images/iphone/sprite_photo_toolbar_v3.png.v1"), url("http://l.yimg.com/g/images/iphone/set_case.gif"), url("http://l.yimg.com/g/images/iphone/sprite_confirmation_icons.png");
+background-image:url("/iphone/images/list_arrow.png"), url("/iphone/images/balls-24x12-trans.gif"), url("/iphone/images/sprite_activity_icons.png.v1"), url("/iphone/images/sprite_photo_toolbar_v3.png.v1"), url("/iphone/images/set_case.gif"), url("/iphone/images/sprite_confirmation_icons.png");
 display:none;
 }
 #header.show-sub-nav {
@@ -275,7 +275,7 @@ margin:-12px 0 0 56px;
 }
 #large-loader {
 -moz-border-radius:10px 10px 10px 10px;
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll 5px 6px #EEEEEE;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll 5px 6px #EEEEEE;
 color:#666666;
 height:19px;
 left:50%;
@@ -299,7 +299,7 @@ padding:4px 4px 4px 23px;
 position:relative;
 }
 #signedin .signin-warning span.icon {
-background:url("http://l.yimg.com/g/images/iphone/sprite_confirmation_icons.png") no-repeat scroll -20px 0 transparent;
+background:url("/iphone/images/sprite_confirmation_icons.png") no-repeat scroll -20px 0 transparent;
 display:block;
 height:14px;
 left:5px;
@@ -308,7 +308,7 @@ top:3px;
 width:14px;
 }
 .msg {
-background:url("http://l.yimg.com/g/images/iphone/sprite_confirmation_icons.png") repeat-x scroll 0 -35px transparent;
+background:url("/iphone/images/sprite_confirmation_icons.png") repeat-x scroll 0 -35px transparent;
 display:none;
 height:25px;
 left:0;
@@ -319,7 +319,7 @@ width:100%;
 z-index:10;
 }
 .msg span {
-background:url("http://l.yimg.com/g/images/iphone/sprite_confirmation_icons.png") no-repeat scroll 0 0 transparent;
+background:url("/iphone/images/sprite_confirmation_icons.png") no-repeat scroll 0 0 transparent;
 display:block;
 height:14px;
 left:7px;
@@ -345,7 +345,7 @@ top:0;
 width:100%;
 }
 .msg a.close span {
-background:url("http://l.yimg.com/g/images/iphone/sprite_confirmation_icons.png") no-repeat scroll -79px 0 transparent;
+background:url("/iphone/images/sprite_confirmation_icons.png") no-repeat scroll -79px 0 transparent;
 display:block;
 height:7px;
 left:100%;
@@ -481,7 +481,7 @@ margin:0;
 padding:0;
 }
 .contact-title a.contact-more {
-background:url("http://l.yimg.com/g/images/iphone/sprite_photo_toolbar_v3.png.v1") no-repeat scroll center -188px #F3F3F3;
+background:url("/iphone/images/sprite_photo_toolbar_v3.png.v1") no-repeat scroll center -188px #F3F3F3;
 display:block;
 height:24px;
 margin:0;
@@ -504,7 +504,7 @@ position:absolute;
 background:none repeat scroll 0 0 transparent !important;
 }
 .contact-title a.contact-more[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #F3F3F3 !important;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #F3F3F3 !important;
 padding:0 4px;
 }
 #home > div:not(.footer) {
@@ -540,7 +540,7 @@ padding:8px 8px 8px 32px;
 position:relative;
 }
 #home .launch-warning p span.icon {
-background:url("http://l.yimg.com/g/images/iphone/sprite_confirmation_icons.png") no-repeat scroll -20px 0 transparent;
+background:url("/iphone/images/sprite_confirmation_icons.png") no-repeat scroll -20px 0 transparent;
 display:block;
 height:14px;
 left:10px;
@@ -578,7 +578,7 @@ margin:3px 0 0 4px;
 padding:0 3px 1px;
 }
 #home-nav li a {
-background:url("http://l.yimg.com/g/images/iphone/list_arrow.png") no-repeat scroll right center transparent;
+background:url("/iphone/images/list_arrow.png") no-repeat scroll right center transparent;
 color:#444444;
 display:block;
 font-size:14px;
@@ -586,7 +586,7 @@ overflow:hidden;
 padding:12px 36px 12px 12px;
 }
 #home-nav li a[selected="progress"] {
-background-image:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") !important;
+background-image:url("/iphone/images/balls-24x12-trans.gif") !important;
 margin-right:7px;
 padding-right:30px;
 }
@@ -663,7 +663,7 @@ width:145px;
 float:left;
 }
 .loggedout #home a.Butt[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
 text-indent:-9999em;
 }
 .loggedout #stats-strip {
@@ -758,7 +758,7 @@ border-bottom:1px solid #E0E0E0;
 }
 .photo-page .photo_container {
 display:block;
-margin:5px;
+margin:5px 0;
 }
 .photo-page .photo_meta {
 padding:5px;
@@ -866,7 +866,7 @@ top:15px;
 width:150px;
 }
 .photo-page .pagination a.Butt[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
 text-indent:-9999em;
 }
 .paging_div {
@@ -898,7 +898,7 @@ display:none;
 }
 .photo_container a[selected="progress"] .main_photo_overlay {
 -moz-border-radius:6px 6px 6px 6px;
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #FFFFFF;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #FFFFFF;
 display:block;
 height:26px;
 left:50%;
@@ -908,7 +908,7 @@ top:50%;
 width:35px;
 }
 .photo_container a .main_video_overlay {
-background:url("http://l.yimg.com/g/images/iphone/video_play_icon_large.png.v1") repeat scroll 0 0 transparent;
+background:url("/iphone/images/video_play_icon_large.png.v1") repeat scroll 0 0 transparent;
 display:block;
 height:38px;
 left:50%;
@@ -947,33 +947,26 @@ text-align:center;
 width:140px;
 }
 .pro-icon {
-background:url("http://l.yimg.com/g/images/iphone/sprite_photo_toolbar_v3.png.v1") no-repeat scroll center -169px transparent;
+background:url("/iphone/images/sprite_photo_toolbar_v3.png.v1") no-repeat scroll center -169px transparent;
 line-height:12px;
 padding:0 10px;
 }
 .photo_nav {
-float:right;
-margin-right:5px;
-width:65px;
+margin:5px;
+width:150px;
 }
 .photo_nav > a {
 background:none repeat scroll 0 0 #EEEEEE;
-display:block;
 height:65px;
-margin:0 0 5px;
 padding:0;
 }
 .photo_nav .next_photo_overlay {
-background:url("http://l.yimg.com/g/images/iphone/sprite_photo_toolbar_v3.png.v1") no-repeat scroll center 21px transparent;
-display:block;
+background:url("/iphone/images/sprite_photo_toolbar_v3.png.v1") no-repeat scroll center 21px transparent;
 height:65px;
-left:0;
-position:absolute;
-top:0;
 width:65px;
 }
 .photo_nav .prev_photo_overlay {
-background:url("http://l.yimg.com/g/images/iphone/sprite_photo_toolbar_v3.png.v1") no-repeat scroll center -22px transparent;
+background:url("/iphone/images/sprite_photo_toolbar_v3.png.v1") no-repeat scroll center -22px transparent;
 display:block;
 height:65px;
 left:0;
@@ -983,7 +976,7 @@ width:65px;
 }
 .photo_nav .next_photo_div[selected="progress"] .next_photo_overlay, .photo_nav .prev_photo_div[selected="progress"] .prev_photo_overlay {
 -moz-border-radius:6px 6px 6px 6px;
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #FFFFFF;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #FFFFFF;
 height:26px;
 left:15px;
 top:20px;
@@ -991,6 +984,7 @@ width:35px;
 }
 .photo_nav .next_photo_div {
 position:relative;
+left:175px;
 }
 .photo_nav .prev_photo_div {
 background-position:center -36px;
@@ -1011,10 +1005,10 @@ height:65px;
 vertical-align:middle;
 }
 .photo_nav .next_photo_div[selected="progress"], .photo_nav .prev_photo_div[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center transparent;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center transparent;
 }
 .photo_nav .fave_photo_div {
-background:url("http://l.yimg.com/g/images/iphone/sprite_photo_toolbar_v3.png.v1") no-repeat scroll 22px -87px #EEEEEE;
+background:url("/iphone/images/sprite_photo_toolbar_v3.png.v1") no-repeat scroll 22px -87px #EEEEEE;
 height:20px;
 padding:10px 0;
 }
@@ -1043,7 +1037,7 @@ display:block;
 float:left;
 }
 .photo_comments .comment-buttons .some-html-link {
-background:url("http://l.yimg.com/g/images/iphone/caret_closed.gif") no-repeat scroll 0 2px transparent;
+background:url("/iphone/images/caret_closed.gif") no-repeat scroll 0 2px transparent;
 display:block;
 float:left;
 font-size:11px;
@@ -1051,7 +1045,7 @@ margin-top:-10px;
 padding:0 0 0 9px;
 }
 .photo_comments .comment-buttons .some-html-link.open {
-background:url("http://l.yimg.com/g/images/iphone/caret_open.gif") no-repeat scroll 0 3px transparent;
+background:url("/iphone/images/caret_open.gif") no-repeat scroll 0 3px transparent;
 }
 .photo_comments .comment-buttons .some-html-link a {
 display:inline;
@@ -1067,7 +1061,7 @@ text-align:center;
 float:right;
 }
 .photo_comments .comment-buttons .preview-comment[selected="progress"], .photo_comments .comment-buttons .post-comment[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
 text-indent:-9999em;
 }
 .photo_comments .some-html {
@@ -1153,7 +1147,7 @@ display:block;
 padding:0 10px 3px;
 }
 .photo-page-large .available-sizes li a[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
 }
 .photo-page-large .available-sizes li a[selected="progress"] > span {
 visibility:hidden;
@@ -1331,7 +1325,7 @@ min-width:100px;
 text-align:center;
 }
 .action .action-button .Butt[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
 text-indent:-9999em;
 }
 .action .footer {
@@ -1359,7 +1353,7 @@ margin:0 auto;
 width:130px;
 }
 .Interst .confirmation_button a.Butt[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
 text-indent:-9999em;
 }
 .InterstFoot {
@@ -1370,7 +1364,7 @@ text-align:left;
 vertical-align:middle;
 }
 .InterstFoot h3 {
-background:url("http://l.yimg.com/g/images/iphone/icon_info_12.png") no-repeat scroll 0 1px transparent;
+background:url("/iphone/images/icon_info_12.png") no-repeat scroll 0 1px transparent;
 font-weight:bold;
 margin:0 0 12px;
 padding:0 0 0 19px;
@@ -1408,7 +1402,7 @@ margin:0;
 padding:0;
 }
 ul.photo-list li.contact-title a.contact-more {
-background:url("http://l.yimg.com/g/images/iphone/sprite_photo_toolbar_v3.png.v1") no-repeat scroll center -188px #F3F3F3;
+background:url("/iphone/images/sprite_photo_toolbar_v3.png.v1") no-repeat scroll center -188px #F3F3F3;
 display:block;
 height:24px;
 margin:0;
@@ -1431,7 +1425,7 @@ ul.photo-list li.contact-title a[selected="progress"] {
 background:none repeat scroll 0 0 transparent !important;
 }
 ul.photo-list li.contact-title a.contact-more[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #F3F3F3 !important;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #F3F3F3 !important;
 padding:0 4px;
 }
 ul.photo-list li.title a {
@@ -1520,14 +1514,14 @@ position:absolute;
 width:50px;
 }
 ul.photo-list li .set_block, ul.photo-list li .gallery_block {
-background:url("http://l.yimg.com/g/images/iphone/set_case.gif") no-repeat scroll 0 0 transparent;
+background:url("/iphone/images/set_case.gif") no-repeat scroll 0 0 transparent;
 height:62px;
 margin-right:0;
 padding:6px 0 0 6px;
 width:63px;
 }
 ul.photo-list li .gallery_block {
-background-image:url("http://l.yimg.com/g/images/iphone/gallery_case.gif");
+background-image:url("/iphone/images/gallery_case.gif");
 }
 ul.photo-list li .set_block img, ul.photo-list li .gallery_block img {
 border:1px solid #000000;
@@ -1540,7 +1534,7 @@ height:68px;
 width:91px;
 }
 ul.photo-list li a.photo_container .main_video_overlay {
-background:url("http://l.yimg.com/g/images/iphone/video_play_icon_large.png.v1") repeat scroll 0 0 transparent;
+background:url("/iphone/images/video_play_icon_large.png.v1") repeat scroll 0 0 transparent;
 display:block;
 height:38px;
 left:50%;
@@ -1636,7 +1630,7 @@ width:35px;
 z-index:10;
 }
 ul.photo-list.thumb-view li a[selected="progress"] .img_block .loading-overlay {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #FFFFFF;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #FFFFFF;
 }
 ul.photo-list.gallery-view {
 padding:0 0 4px;
@@ -1701,7 +1695,7 @@ width:35px;
 z-index:10;
 }
 ul.photo-list.gallery-view li a.img_block[selected="progress"] .loading-overlay {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #FFFFFF;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #FFFFFF;
 }
 ul.photo-list.gallery-view li .meta_block {
 margin-top:4px;
@@ -1865,7 +1859,7 @@ text-align:center;
 width:18%;
 }
 body.scrumjax-search ul.contact-list li.sub-bar a.Butt[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
 text-indent:-9999em;
 }
 body.scrumjax-search ul.contact-list li.sub-bar {
@@ -1917,7 +1911,7 @@ overflow:hidden;
 float:left;
 }
 .relationship .Butt[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
 padding:10px 18px;
 text-indent:-9999em;
 }
@@ -1965,7 +1959,7 @@ position:absolute;
 width:48px;
 }
 ul.activity-list li .img_block .set_block, ul.activity-list li .img_block .gallery_block {
-background:url("http://l.yimg.com/g/images/iphone/set_case_small.gif") no-repeat scroll 0 0 transparent;
+background:url("/iphone/images/set_case_small.gif") no-repeat scroll 0 0 transparent;
 display:block;
 height:51px;
 margin-right:0;
@@ -1973,7 +1967,7 @@ padding:5px 0 0 5px;
 width:48px;
 }
 ul.activity-list li .img_block .gallery_block {
-background-image:url("http://l.yimg.com/g/images/iphone/gallery_case_small.gif");
+background-image:url("/iphone/images/gallery_case_small.gif");
 }
 ul.activity-list li .img_block .set_block img, ul.activity-list li .img_block .gallery_block img {
 border:1px solid #000000;
@@ -2013,7 +2007,7 @@ padding:5px 5px 5px 51px;
 position:relative;
 }
 ul.ra-items li span.ra-icon-container {
-background:url("http://l.yimg.com/g/images/iphone/sprite_activity_icons.png.v3") no-repeat scroll 0 0 #FFFFFF;
+background:url("/iphone/images/sprite_activity_icons.png.v3") no-repeat scroll 0 0 #FFFFFF;
 display:block;
 height:20px;
 left:0;
@@ -2107,7 +2101,7 @@ margin-bottom:6px;
 width:100%;
 }
 #search #search-submit {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll -100px -100px #0063DC;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll -100px -100px #0063DC;
 min-width:80px;
 text-align:center;
 }
@@ -2115,7 +2109,7 @@ text-align:center;
 margin-top:0;
 }
 #search #search-submit[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
 text-indent:-9999em;
 }
 #adv-search-options {
@@ -2123,7 +2117,7 @@ display:none;
 font-size:13px;
 }
 #adv-search-toggle {
-background:url("http://l.yimg.com/g/images/iphone/caret_closed.gif") no-repeat scroll 0 4px transparent;
+background:url("/iphone/images/caret_closed.gif") no-repeat scroll 0 4px transparent;
 display:block;
 font-size:13px;
 margin:0 0 20px;
@@ -2157,7 +2151,7 @@ overflow:hidden;
 padding-bottom:24px;
 }
 #upload #upload-submit {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll -100px -100px #0063DC;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll -100px -100px #0063DC;
 clear:both;
 float:left;
 margin-top:-4px;
@@ -2165,7 +2159,7 @@ min-width:80px;
 text-align:center;
 }
 #upload #upload-submit[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
 text-indent:-9999em;
 }
 #upload dl dd a span {
@@ -2266,7 +2260,7 @@ min-height:0;
 padding:0 27px 10px;
 }
 ul.photo-list li.warn .warning-icon, .page-not-found p.first .warning-icon, .dont-have-permission p.first .warning-icon {
-background:url("http://l.yimg.com/g/images/iphone/sprite_confirmation_icons.png") no-repeat scroll -20px 0 transparent;
+background:url("/iphone/images/sprite_confirmation_icons.png") no-repeat scroll -20px 0 transparent;
 padding:0 10px 0 7px;
 }
 .authDetails h4 {
@@ -2402,7 +2396,7 @@ padding:0 10px;
 padding:10px;
 }
 .button-container .Butt[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
 }
 .button-container .Butt[selected="progress"] span {
 visibility:hidden;
@@ -2437,7 +2431,7 @@ vertical-align:middle;
 padding-top:0;
 }
 #sso-toggle-submit {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll -100px -100px #0063DC;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll -100px -100px #0063DC;
 display:block;
 margin:0 auto;
 min-width:80px;
@@ -2527,13 +2521,13 @@ display:block;
 margin-bottom:4px;
 }
 .abuse .form-submit {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll -100px -100px #0063DC;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll -100px -100px #0063DC;
 float:left;
 margin:0 18px 0 0;
 min-width:80px;
 text-align:center;
 }
 .abuse .form-submit[selected="progress"] {
-background:url("http://l.yimg.com/g/images/iphone/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
+background:url("/iphone/images/balls-24x12-trans.gif") no-repeat scroll center center #DDDDDD;
 text-indent:-9999em;
 }

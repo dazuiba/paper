@@ -1,7 +1,7 @@
 module IphoneCtr
   def self.included(base)
     base.send :before_filter, :adjust_format_for_iphone
-    #base.send :before_filter, :iphone_login_required
+     
     base.send :layout, proc{ |controller| 
       if controller.request.xhr? && controller.send(:iphone_request?)
           nil
@@ -15,6 +15,10 @@ module IphoneCtr
     def adjust_format_for_iphone
       if iphone_request?
         request.format = :iphone
+        if !request.xhr?
+          render :partial => "mshared/layout"
+          return false
+        end
       end
     end
 
@@ -27,7 +31,12 @@ module IphoneCtr
 
     # Return true for requests to iphone.trawlr.com
     def iphone_request?
-      return (request.subdomains.first == "m" || params[:format] == "iphone")
+      return (request.subdomains.first == "m" || params[:format] == "iphone"||iphone_user_agent?)
     end
+    
+    def iphone_user_agent?
+      request.env["HTTP_USER_AGENT"] && request.env["HTTP_USER_AGENT"][/(Mobile\/.+Safari)/]
+    end
+    
   
 end
