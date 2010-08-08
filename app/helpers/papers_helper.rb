@@ -1,7 +1,7 @@
 module PapersHelper
   def paper_image_url(paper, size=nil)
     hash = {nil=>"",:s => "thumb/s/"}
-    "/papers/#{hash[size]}#{paper.image_path}"
+    "#{ENV['resource_url']}/papers/#{hash[size]}#{paper.image_path}"
   end
   
   def paper_image_tag(paper, options={})
