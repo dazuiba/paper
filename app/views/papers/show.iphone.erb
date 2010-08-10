@@ -16,14 +16,14 @@
 					<% if prev = @paper.prev %>
 							<a href="<%= paper_path(prev) %>" class="prev_photo_div">
 								<span class="next_photo_overlay"></span>
-								<%=  paper_image_tag(prev, :_size=>:s, :size=>"65x65") %>
+								<%=  paper_image_tag(prev, :_size=>:s, :width=>"65") %>
 							</a>
 					<% end %>
 					
 					<% if nex = @paper.next %>
 							<a href="<%= paper_path(nex) %>" class="next_photo_div">
 								<span class="prev_photo_overlay"></span>
-								<%=  paper_image_tag(nex, :_size=>:s, :size=>"65x65") %>
+								<%=  paper_image_tag(nex, :_size=>:s, :width=>"65") %>
 							</a>
 					<% end %>
 				</div>

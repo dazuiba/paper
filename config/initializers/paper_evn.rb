@@ -1,1 +1,1 @@
-ENV['resource_url'] = "http://74.207.246.91/a"
+ENV['resource_url'] = ""

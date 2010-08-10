@@ -81,37 +81,8 @@
 -->
 
 	
-	<div id="header" class="toolbar">
-		<div id="header-top">
-			<div id="logo">
-				<h1><a href="#home" id="logo-link" title="首頁"><img src="/iphone/images/flickr_logo.png" alt="Flickr" width="50" height="15"></a></h1>
-				<span id="global-loading"><img src="/iphone/images/balls-24x12-trans.gif" width="20" height="10" alt="正在加载..."></span>
-			</div>
+	<%= render :partial => 'mshared/header' %>
 
-			<div id="signedin"><a href="/signin/" type="signin">登入</a></div>
-		</div>
-
-	
-		<div id="nav">
-			<ul id="nav_main">
-				<li id="welcome-tab" class="first"><a href="#home" type="nav">欢迎</a></li>
-        <li id="search-tab" class="last"><a href="#search" type="nav">搜索 </a></li>
-				<li id="explore-tab"><a href="/explore/interesting/">热门搜索</a></li>
-				<li id="nearby-tab"><a href="/nearby/" type="nav">注册</a></li>
-			</ul>
-
-			<ul id="nav_sub"></ul>
-		</div>	
-		
-		<div id="large-loader">载入中...</div>
-		
-		<div id="msg" class="msg">
-			<p id="msg-p"></p>
-			<span></span>
-			<a href="#" class="close" type="hide_message"><span></span></a>
-		</div>
-	</div> 
-	
 	<%= render :partial => 'mshared/home' %>
 	<div id="footer">
 		<p>Copyright © 2010 Yahoo! Inc. 版權所有 不得轉載</p>
