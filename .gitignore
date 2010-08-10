@@ -19,4 +19,5 @@ CVS
 .cvsignore
 .DS_Store
 public/papers/
-*.default
+config/initializers/paper_evn.rb
+
