@@ -2,6 +2,10 @@ class Paper < ActiveRecord::Base
     include PapersHelper::Model
     include Crawler::Utils
     attr_accessor :image
+    belongs_to :category
+    belongs_to :owner, :class_name => "User"
+    
+    
     #title, image, tag, total_views, today_views
     validates_presence_of :title 
     

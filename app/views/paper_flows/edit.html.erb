@@ -1,0 +1,12 @@
+<h1>Editing paper_flow</h1>
+
+<% form_for(@paper_flow) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @paper_flow %> |
+<%= link_to 'Back', paper_flows_path %>

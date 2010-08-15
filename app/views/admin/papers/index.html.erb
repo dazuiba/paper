@@ -1,0 +1,30 @@
+<%= link_to "Paper Flows", "/admin/paper_flows" %>
+<table border="0" cellspacing="5" cellpadding="5">
+	<tr><th>ID</th>
+			<th>title</th>
+			<th>owner</th>
+			<th>
+				modified date
+			</th>
+			<th>uid</th>
+			<th>view stats</th>
+			<th>Image</th>
+	</tr>
+
+	<% @papers.each do |paper| %>
+	<tr>
+				<td><%= paper.title %></td>
+				<td><%= link_to_user paper.owner %></td>
+				<td>
+					<%= format_date paper.updated_at %>
+				</td>
+				<td> <%= paper.uid %> </td>
+				<td> <%= paper.total_views %>/ <%= paper.today_views %> </td>
+				<td>
+					<%= link_to_paper paper, :s %>
+				</td>	
+	</tr>
+	<% end %>
+</table>
+
+<%= will_paginate @papers %>

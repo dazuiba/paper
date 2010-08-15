@@ -74,7 +74,7 @@ a.lnk-create-event:link,a.lnk-create-event:visited,a.lnk-create-event:hover,a.ln
 #db-usr-profile .info ul li.last{margin:0;}
 #db-usr-profile h1{padding:0 0 5px 0;margin-bottom:5px;border-bottom:1px dashed #ccc;}
 body{margin-top:0;}
-#header{width:100%;margin:0 0 40px 0;background:none;}
+#header{width:100%;padding-top:15px;margin:0 0 40px 0;background:none;}
 #searbar{margin:0;}
 #header{width:100%;}
 #header:after,.site-nav:after,.top-nav-items:after,.top-nav:after,.site-nav .bd:after{content:'\0020';display:block;clear:both;height:0;}

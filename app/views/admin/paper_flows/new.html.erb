@@ -1,0 +1,50 @@
+<style type="text/css" media="screen">
+	.form{
+		padding-left:22px;
+	}
+</style>
+<h2>从其他网站抓取:</h2>
+
+<% form_for :parse_info, OpenStruct.new() do |f| -%>
+URL Pattern: 
+  <p class="form"><%= f.text_field :url_pattern, :size=>80 %></p>
+		
+			bind vars:
+  <p class="form">
+		<% 1.times do %>
+			<%= f.text_field "key", :size=>3 %>=>
+			<%= f.text_field "value", :size=>10 %>
+			<br>
+		<% end %>
+  </p>
+Image css_path: 
+	  <p class="form"><%= f.text_field :css_path %></p>
+
+	<p class="form">
+			<%= f.submit "解析" %>
+	</p>
+<% end -%>
+
+<h2>Paper Flow要填写的信息</h2>
+
+<% if @parser %>
+
+	<% form_for @paper_flow do |f| -%>
+		<p class="form">
+		  <%= f.text_field :title, :value=> @parser.title %>
+		</p>
+		
+		<table border="0" cellspacing="5" cellpadding="5">
+			<tr><th>Image</th></tr>
+			<% @parser.images.each do|image| %>
+				<tr>
+					<td>
+							<%= text_field_tag :image_src, image.src  %>
+							<%= image_tag image.src, :height=>100%>
+					</td>
+				</tr>
+			<% end %>
+		</table>
+	<% end -%>
+<% end %>
+

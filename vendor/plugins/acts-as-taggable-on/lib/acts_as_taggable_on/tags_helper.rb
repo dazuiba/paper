@@ -1,4 +1,3 @@
-require 'ext'
 module ActsAsTaggableOn
   module TagsHelper
     # See the README for an example using tag_cloud.

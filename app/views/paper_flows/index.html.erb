@@ -1,0 +1,18 @@
+<h1>Listing paper_flows</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @paper_flows.each do |paper_flow| %>
+  <tr>
+    <td><%= link_to 'Show', paper_flow %></td>
+    <td><%= link_to 'Edit', edit_paper_flow_path(paper_flow) %></td>
+    <td><%= link_to 'Destroy', paper_flow, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New paper_flow', new_paper_flow_path %>

@@ -35,7 +35,7 @@ module IphoneCtr
     end
     
     def iphone_user_agent?
-      true||request.env["HTTP_USER_AGENT"] && request.env["HTTP_USER_AGENT"][/(Mobile\/.+Safari)/]
+      request.env["HTTP_USER_AGENT"] && request.env["HTTP_USER_AGENT"][/(Mobile\/.+Safari)/]
     end
     
   

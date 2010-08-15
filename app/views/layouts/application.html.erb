@@ -1,6 +1,12 @@
 <head>
-    <title>
-			豆瓣电影
+    <title> 
+		<% titles = ["iPhone壁纸"]
+			if @title
+				titles << @titles
+			end
+		 %>
+	
+		<%= titles.join("|") %>
 		</title>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta content="no-cache" http-equiv="Pragma">
@@ -66,47 +72,10 @@
 		</script> 
 </head>
 <body>
-<div class="top-nav">
-  <div class="bd">
-    <div class="top-nav-info">
-            <a rel="nofollow" href="http://www.douban.com/accounts/login">登录</a> <a href="http://www.douban.com/accounts/register">注册</a>
-    </div>
-    <div class="top-nav-items">
-        <ul>
-
-                <li>
-                  <a href="http://www.douban.com/">豆瓣社区</a>
-                </li>
-
-                <li>
-                  <a href="http://book.douban.com/">豆瓣读书</a>
-                </li>
-
-                <li class="on">
-                  <a href="http://movie.douban.com/">豆瓣电影</a>
-                </li>
-
-                <li>
-                  <a href="http://music.douban.com/">豆瓣音乐</a>
-                </li>
-
-                <li>
-                  <a target="_blank" href="http://9.douban.com/">九点</a>
-                </li>
-
-                <li>
-                  <a target="_blank" href="http://douban.fm/">豆瓣电台</a>
-                </li>
-        </ul>
-    </div>
-  </div>
-</div>
 <div id="wrapper">
 	<div id="header">
 		<div class="site-nav" id="db-nav-movie">
-			<div class="site-nav-logo">
-				<a href="http://movie.douban.com"><img alt="豆瓣" src="http://t.douban.com/pics/nav/lg_movie_a6.png"> <em>首页</em></a>
-			</div>
+			<span style="font-size:22px;">iPhone墙纸</span>
 			<div class="bd">
 				<div class="nav-srh">
 					<form action="/subject_search" method="get" name="ssform" id="ssform">
@@ -118,19 +87,16 @@
 				<div class="site-nav-items">
 					<ul>
 						<li>
-							<a href="/">电影</a>
+							<a href="/">首页</a>
 						</li>
 						<li>
-							<a href="/tv">电视剧</a>
-						</li>
-						<li>
-							<a href="/chart">排行榜</a>
+							<a href="/tv">最近更新</a>
 						</li>
 						<li>
 							<a href="/tags/">分类浏览</a>
 						</li>
 						<li>
-							<a href="/review/best/">热评</a>
+							<a href="/review/best/">登录</a>
 						</li>
 					</ul>
 				</div>
@@ -143,9 +109,18 @@
 		</script>
 	</div>
 	<div id="content">
-		<p style="color: green">
-			<%= flash[:notice] %>
-		</p>
+		<% if msg = (@notice||flash[:notice]) %>
+			<p style="color: green;">
+				<%= msg %>
+			</p>
+		<% end %>
+		<% if msg = (@error||flash[:error]) %>
+			<p style="color: red;">
+				<%= msg %>
+			</p>
+		<% end %>
+		
+		
 		<%= yield %>
 		
 		<div id="footer">
